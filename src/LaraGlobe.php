@@ -10,6 +10,7 @@ use DmitriyMarley\LaraGlobe\{
     Models\State,
     Repositories\Countries
 };
+use Illuminate\Support\Collection;
 
 class LaraGlobe
 {
