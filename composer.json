@@ -1,6 +1,7 @@
 {
     "name": "dmitriymarley/laraglobe",
     "description": "Provide countries list with country code, cities and states",
+    "version": "v1.0.0-beta",
     "type": "package",
     "keywords": [
         "dmitriymarley",
