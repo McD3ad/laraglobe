@@ -14,7 +14,7 @@ class LaraGlobeFacade extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        return 'lara-globe';
+        return 'laraglobe';
     }
 
 }
