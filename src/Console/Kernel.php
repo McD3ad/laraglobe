@@ -1,9 +1,13 @@
 <?php
 
+declare(strict_types = 1);
+
 namespace DmitriyMarley\LaraGlobe\Console;
 
-use Illuminate\Console\Scheduling\Schedule;
-use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
+use Illuminate\{
+    Console\Scheduling\Schedule,
+    Foundation\Console\Kernel as ConsoleKernel
+};
 
 class Kernel extends ConsoleKernel
 {
@@ -16,5 +20,4 @@ class Kernel extends ConsoleKernel
         Commands\GlobePopulate::class,
         Commands\GlobeDestroy::class,
     ];
-
 }

@@ -1,9 +1,11 @@
 <?php
 
+declare(strict_types = 1);
+
 namespace DmitriyMarley\LaraGlobe\Console\Commands;
 
 use Illuminate\Console\Command;
-use DmitriyMarley\LaraGlobe\Repositories\GlobeData;
+use DmitriyMarley\LaraGlobe\Repositories\DataImporter;
 
 class GlobePopulate extends Command
 {
@@ -21,6 +23,9 @@ class GlobePopulate extends Command
      */
     protected $description = 'Populate database with countries, states and cities.';
 
+    /**
+     * Create a new console command instance.
+     */
     public function __construct()
     {
         parent::__construct();
@@ -37,12 +42,13 @@ class GlobePopulate extends Command
     }
 
     /**
+     * Populate database with countries, states and cities.
+     *
      * @return bool
      */
-    public function populateDatabase()
+    private function populateDatabase()
     {
-        (new GlobeData())->up();
-        $this->info('Database populated!');
+        (new DataImporter())->up();
+        $this->info('LaraGlobe tables created!');
     }
-
 }

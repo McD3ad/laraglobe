@@ -1,10 +1,11 @@
 <?php
 
+declare(strict_types = 1);
+
 namespace DmitriyMarley\LaraGlobe\Console\Commands;
 
 use Illuminate\Console\Command;
-use DmitriyMarley\LaraGlobe\Repositories\GlobeData;
-
+use DmitriyMarley\LaraGlobe\Repositories\DataImporter;
 
 class GlobeDestroy extends Command
 {
@@ -22,6 +23,9 @@ class GlobeDestroy extends Command
      */
     protected $description = 'Drop tables with countries, states and cities.';
 
+    /**
+     * Create a new console command instance.
+     */
     public function __construct()
     {
         parent::__construct();
@@ -38,12 +42,13 @@ class GlobeDestroy extends Command
     }
 
     /**
+     * Drop tables with countries, states and cities.
+     *
      * @return bool
      */
-    public function removeDatabase()
+    private function removeDatabase()
     {
-        (new GlobeData())->down();
-        $this->info('Database dropped!');
+        (new DataImporter())->down();
+        $this->info('LaraGlobe tables dropped!');
     }
-
 }

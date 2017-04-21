@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types = 1);
+
 namespace DmitriyMarley\LaraGlobe\Facades;
 
 use Illuminate\Support\Facades\Facade;
@@ -12,9 +14,5 @@ class LaraGlobeFacade extends Facade
      *
      * @return string
      */
-    protected static function getFacadeAccessor()
-    {
-        return 'laraglobe';
-    }
-
+    protected static function getFacadeAccessor() { return 'laraglobe'; }
 }

@@ -5,24 +5,24 @@ namespace DmitriyMarley\LaraGlobe\Repositories;
 use DB;
 use Illuminate\Database\Migrations\Migration;
 
-class GlobeData extends Migration
+class DataImporter extends Migration
 {
     private $data_path = "/data/mysql/";
 
     /**
-     * Run the migrations.
+     * Import SQL dumps into database.
      *
      * @return void
      */
     public function up()
     {
-        DB::unprepared($this->exportSQLDump('countries.sql'));
-        DB::unprepared($this->exportSQLDump('states.sql'));
-        DB::unprepared($this->exportSQLDump('cities.sql'));
+        DB::unprepared($this->importSQLDump('countries.sql'));
+        DB::unprepared($this->importSQLDump('states.sql'));
+        DB::unprepared($this->importSQLDump('cities.sql'));
     }
 
     /**
-     * Reverse the migrations.
+     * Drop tables with countries, states and cities data.
      *
      * @return void
      */
@@ -34,11 +34,12 @@ class GlobeData extends Migration
     }
 
     /**
-     * Export SQL file into database.
+     * Import SQL dump into database.
+     *
      * @param $fileName
      * @return string
      */
-    private function exportSQLDump($fileName)
+    private function importSQLDump($fileName)
     {
         return file_get_contents(realpath(__DIR__ . $this->data_path . $fileName));
     }

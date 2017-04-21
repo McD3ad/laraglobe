@@ -1,31 +1,42 @@
 <?php
 
-namespace DmitriyMarley\LaraGlobe\Repositories;
+declare(strict_types = 1);
 
+namespace DmitriyMarley\LaraGlobe\Repositories;
 
 use DmitriyMarley\LaraGlobe\Models\Country;
 
 class Countries
 {
     /**
-     * Fetch all countries with states and cities
-     * @return \Illuminate\Database\Eloquent\Collection|static[]
+     * Get all countries.
+     *
+     * @return Collection
      */
-    public function getCountries()
+    public function getCountries(): Collection
     {
         return Country::all();
     }
 
-    public function getCountriesWithStates()
+    /**
+     * Get all countries with states.
+     *
+     * @return Collection
+     */
+    public function getCountriesWithStates(): Collection
     {
         return Country::with(['states'])->get();
     }
 
-    public function getCountriesWithStatesAndCities()
+    /**
+     * Get all countries with states and cities.
+     *
+     * @return Collection
+     */
+    public function getCountriesWithStatesAndCities(): Collection
     {
-        return Country::with(['states' => function ($q) {
-            $q->with('cities');
+        return Country::with(['states' => function ($query) {
+            $query->with('cities');
         }])->get();
     }
-
 }

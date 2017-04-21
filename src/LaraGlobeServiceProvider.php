@@ -5,6 +5,7 @@ namespace DmitriyMarley\LaraGlobe;
 use DmitriyMarley\LaraGlobe\Console\Commands\GlobePopulate;
 use DmitriyMarley\LaraGlobe\Console\Commands\GlobeDestroy;
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Foundation\AliasLoader;
 
 class LaraGlobeServiceProvider extends ServiceProvider
 {
@@ -34,10 +35,9 @@ class LaraGlobeServiceProvider extends ServiceProvider
             return new LaraGlobe();
         });
 
-        // Shortcut so developers don't need to add an Alias in app/config/app.php
         $this->app->booting(function () {
-            $loader = \Illuminate\Foundation\AliasLoader::getInstance();
-            $loader->alias('LaraGlobe', 'DmitriyMarley\LaraGlobe\Facades\LaraGlobeFacade');
+            $loader = AliasLoader::getInstance();
+            $loader->alias('LaraGlobe', DmitriyMarley\LaraGlobe\Facades\LaraGlobeFacade::class);
         });
 
         $this->commands($this->commands);
