@@ -1,0 +1,29 @@
+{
+    "name": "dmitriymarley/laraglobe",
+    "description": "Provide countries list with country code, cities and states",
+    "type": "package",
+    "keywords": [
+        "dmitriymarley",
+        "countries",
+        "cities",
+        "states",
+        "globe",
+        "laravel"
+    ],
+    "homepage": "https://github.com/dmitriymarley/laraglobe",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dmytro Krasov",
+            "email": "dmitriymarley@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "DmitriyMarley\\LaraGlobe\\":"src"
+        }
+    }
+}
