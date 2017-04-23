@@ -90,6 +90,8 @@ class LaraGlobe
         }
     }
 
+    /** TODO: Add method to get all cities for country w/o states. */
+
     /**
      * Get Country model for custom query.
      *
