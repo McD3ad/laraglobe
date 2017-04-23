@@ -31,13 +31,8 @@ class LaraGlobeServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton(LaraGlobe::class, function ($app) {
-            return new LaraGlobe();
-        });
-
-        $this->app->booting(function () {
-            $loader = AliasLoader::getInstance();
-            $loader->alias('LaraGlobe', DmitriyMarley\LaraGlobe\Facades\LaraGlobeFacade::class);
+        $this->app->bind('lara-globe', function () {
+            return new LaraGlobe;
         });
 
         $this->commands($this->commands);

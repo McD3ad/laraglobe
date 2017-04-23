@@ -50,7 +50,7 @@ class LaraGlobe
      *
      * @return Collection
      */
-    public static function getCountries(): Collection
+    public function getCountries(): Collection
     {
         $countries = (new Countries())->getCountries();
         if (app()::VERSION < 5.3) {
@@ -65,7 +65,7 @@ class LaraGlobe
      *
      * @return Collection
      */
-    public static function getCountriesWithStates(): Collection
+    public function getCountriesWithStates(): Collection
     {
         $countries = (new Countries())->getCountriesWithStates();
         if (app()::VERSION < 5.3) {
@@ -80,7 +80,7 @@ class LaraGlobe
      *
      * @return Collection
      */
-    public static function getCountriesWithStatesAndCities(): Collection
+    public function getCountriesWithStatesAndCities(): Collection
     {
         $countries = (new Countries())->getCountriesWithStatesAndCities();
         if (app()::VERSION < 5.3) {
