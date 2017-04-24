@@ -5,25 +5,19 @@ declare(strict_types = 1);
 namespace DmitriyMarley\LaraGlobe\Models;
 
 use Illuminate\Database\Eloquent\{
-    Relations\HasMany,
     Relations\BelongsToMany,
     Model
 };
 
-class Country extends Model
+class Region extends Model
 {
     /**
      * Get all states that belongs to this country.
      *
      * @return HasMany
      */
-    public function states(): HasMany
+    public function countries(): BelongsToMany
     {
-        return $this->hasMany(State::class);
-    }
-
-    public function regions(): BelongsToMany
-    {
-        return $this->belongsToMany(Region::class);
+        return $this->belongsToMany(Country::class);
     }
 }

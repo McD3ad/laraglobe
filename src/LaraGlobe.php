@@ -8,7 +8,8 @@ use DmitriyMarley\LaraGlobe\{
     Models\City,
     Models\Country,
     Models\State,
-    Repositories\Countries
+    Models\Region,
+    Repositories\DataRepository
 };
 use Illuminate\Support\Collection;
 
@@ -36,13 +37,29 @@ class LaraGlobe
     private $stateModel;
 
     /**
+     * Region model.
+     *
+     * @var Region
+     */
+    private $regionModel;
+
+    /**
+     * Data repository.
+     *
+     * @var DataRepository
+     */
+    private $repository;
+
+    /**
      * Set class properties with respective models.
      */
     public function __construct()
     {
-        $this->countryModel = new Country();
-        $this->stateModel = new State();
-        $this->cityModel = new City();
+        $this->countryModel = new Country;
+        $this->stateModel = new State;
+        $this->cityModel = new City;
+        $this->regionModel = new Region;
+        $this->repository = new DataRepository;
     }
 
     /**
@@ -52,7 +69,7 @@ class LaraGlobe
      */
     public function getCountries(): Collection
     {
-        $countries = (new Countries())->getCountries();
+        $countries = $this->repository->getCountries();
         if (app()::VERSION < 5.3) {
             return collect($countries);
         } else {
@@ -67,7 +84,7 @@ class LaraGlobe
      */
     public function getCountriesWithStates(): Collection
     {
-        $countries = (new Countries())->getCountriesWithStates();
+        $countries = $this->repository->getCountriesWithStates();
         if (app()::VERSION < 5.3) {
             return collect($countries);
         } else {
@@ -82,7 +99,7 @@ class LaraGlobe
      */
     public function getCountriesWithStatesAndCities(): Collection
     {
-        $countries = (new Countries())->getCountriesWithStatesAndCities();
+        $countries = $this->repository->getCountriesWithStatesAndCities();
         if (app()::VERSION < 5.3) {
             return collect($countries);
         } else {
@@ -120,5 +137,10 @@ class LaraGlobe
     public function getCityModel()
     {
         return $this->cityModel;
+    }
+
+    public function getRegionModel()
+    {
+        return $this->regionModel;
     }
 }

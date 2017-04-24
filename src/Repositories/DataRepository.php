@@ -7,7 +7,7 @@ namespace DmitriyMarley\LaraGlobe\Repositories;
 use DmitriyMarley\LaraGlobe\Models\Country;
 use Illuminate\Support\Collection;
 
-class Countries
+class DataRepository
 {
     /**
      * Get all countries.
