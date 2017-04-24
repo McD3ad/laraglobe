@@ -1,3 +1,4 @@
+![LaraGlobe Logo](https://github.com/dmitriymarley/laraglobe/blob/master/logo.jpg)
 # Installation
 ## Via Composer
 
