@@ -19,6 +19,7 @@ class DataImporter extends Migration
         DB::unprepared($this->importSQLDump('countries.sql'));
         DB::unprepared($this->importSQLDump('states.sql'));
         DB::unprepared($this->importSQLDump('cities.sql'));
+        DB::unprepared($this->importSQLDump('regions.sql'));
     }
 
     /**
@@ -28,9 +29,12 @@ class DataImporter extends Migration
      */
     public function down()
     {
+        DB::unprepared('ALTER TABLE `country_region` DROP FOREIGN KEY `fk_country_region__region`');
+        DB::unprepared('ALTER TABLE `country_region` DROP FOREIGN KEY `fk_country_region__country`');
         DB::unprepared('DROP TABLE countries');
         DB::unprepared('DROP TABLE states');
         DB::unprepared('DROP TABLE cities');
+        DB::unprepared('DROP TABLE regions');
     }
 
     /**

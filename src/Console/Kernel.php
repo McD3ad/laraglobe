@@ -18,6 +18,6 @@ class Kernel extends ConsoleKernel
      */
     protected $commands = [
         Commands\GlobePopulate::class,
-        Commands\GlobeDestroy::class,
+        Commands\GlobeDrop::class,
     ];
 }

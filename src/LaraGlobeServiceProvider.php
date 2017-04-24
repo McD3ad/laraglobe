@@ -3,7 +3,7 @@
 namespace DmitriyMarley\LaraGlobe;
 
 use DmitriyMarley\LaraGlobe\Console\Commands\GlobePopulate;
-use DmitriyMarley\LaraGlobe\Console\Commands\GlobeDestroy;
+use DmitriyMarley\LaraGlobe\Console\Commands\GlobeDrop;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Foundation\AliasLoader;
 
@@ -11,7 +11,7 @@ class LaraGlobeServiceProvider extends ServiceProvider
 {
     protected $commands = [
         GlobePopulate::class,
-        GlobeDestroy::class,
+        GlobeDrop::class,
     ];
 
     /**

@@ -7,7 +7,7 @@ namespace DmitriyMarley\LaraGlobe\Console\Commands;
 use Illuminate\Console\Command;
 use DmitriyMarley\LaraGlobe\Repositories\DataImporter;
 
-class GlobeDestroy extends Command
+class GlobeDrop extends Command
 {
     /**
      * The name and signature of the console command.
