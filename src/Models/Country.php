@@ -12,6 +12,18 @@ use Illuminate\Database\Eloquent\{
 
 class Country extends Model
 {
+    protected $fillable = [
+        'region_id',
+        'code3l',
+        'code2l',
+        'name',
+        'name_official',
+        'flag_small',
+        'flag_large',
+        'latitude',
+        'longitude',
+        'zoom',
+    ];
     /**
      * Get all states that belongs to this country.
      *
