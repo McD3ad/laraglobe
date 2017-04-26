@@ -27,13 +27,12 @@ VALUES
   (1, 'Africa'),
   (2, 'Asia'),
   (3, 'Central America'),
-  (4, 'Central Europe'),
-  (5, 'Eastern Europe'),
-  (6, 'Middle East'),
-  (7, 'North America'),
-  (8, 'Oceania'),
-  (9, 'South America'),
-  (10, 'The Caribbean');
+  (4, 'Europe'),
+  (5, 'Middle East'),
+  (6, 'Northern America'),
+  (7, 'Oceania'),
+  (8, 'South America'),
+  (9, 'The Caribbean');
 /*!40000 ALTER TABLE `regions`
   ENABLE KEYS */;
 UNLOCK TABLES;
