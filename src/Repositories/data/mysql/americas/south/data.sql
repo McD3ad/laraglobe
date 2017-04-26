@@ -15,7 +15,8 @@ INSERT INTO `countries` (`id`,`region_id`, `code3l`, `code2l`, `name`, `name_off
   (105, 8, 'PER', 'PE', 'Peru', 'the Republic of Peru', 'PE-32.png', 'PE-128.png', -8.50205247, -76.15772412, 5),
   (106, 8, 'SUR', 'SR', 'Suriname', 'the Republic of Suriname', 'SR-32.png', 'SR-128.png', 4.26470865, -55.93988238, 7),
   (107, 8, 'URY', 'UY', 'Uruguay', 'the Eastern Republic of Uruguay', 'UY-32.png', 'UY-128.png', -32.49342987, -55.76583300, 7),
-  (108, 8, 'VEN', 'VE', 'Venezuela', 'the Bolivarian Republic of Venezuela', 'VE-32.png', 'VE-128.png', 5.98477766, -65.94152264, 6);
+  (108, 8, 'VEN', 'VE', 'Venezuela', 'the Bolivarian Republic of Venezuela', 'VE-32.png', 'VE-128.png', 5.98477766, -65.94152264, 6),
+  (109, 8, 'SGS', 'GS', 'South Georgia and the South Sandwich Islands', 'South Georgia and the South Sandwich Islands', 'GS-32.png', 'GS-128.png', -54.38130284, -36.67305304, 9);
   /*!40000 ALTER TABLE `countries`
   ENABLE KEYS */;
 UNLOCK TABLES;
