@@ -59,3 +59,93 @@ INSERT INTO `countries` (`id`,`region_id`, `code3l`, `code2l`, `name`, `name_off
   /*!40000 ALTER TABLE `countries`
   ENABLE KEYS */;
 UNLOCK TABLES;
+
+--
+-- ALBANIA
+--
+INSERT INTO `states` (`id`, `name`, `country_id`) VALUES
+(74, 'Berat', 196),
+(75, 'Bulqize', 196),
+(76, 'Delvine', 196),
+(77, 'Devoll', 196),
+(78, 'Dibre', 196),
+(79, 'Durres', 196),
+(80, 'Elbasan', 196),
+(81, 'Fier', 196),
+(82, 'Gjirokaster', 196),
+(83, 'Gramsh', 196),
+(84, 'Has', 196),
+(85, 'Kavaje', 196),
+(86, 'Kolonje', 196),
+(87, 'Korce', 196),
+(88, 'Kruje', 196),
+(89, 'Kucove', 196),
+(90, 'Kukes', 196),
+(91, 'Kurbin', 196),
+(92, 'Lezhe', 196),
+(93, 'Librazhd', 196),
+(94, 'Lushnje', 196),
+(95, 'Mallakaster', 196),
+(96, 'Malsi e Madhe', 196),
+(97, 'Mat', 196),
+(98, 'Mirdite', 196),
+(99, 'Peqin', 196),
+(100, 'Permet', 196),
+(101, 'Pogradec', 196),
+(102, 'Puke', 196),
+(103, 'Sarande', 196),
+(104, 'Shkoder', 196),
+(105, 'Skrapar', 196),
+(106, 'Tepelene', 196),
+(107, 'Tirane', 196),
+(108, 'Tropoje', 196),
+(109, 'Vlore', 196);
+
+--
+-- ANDORRA
+--
+INSERT INTO `states` (`id`, `name`, `country_id`) VALUES
+(168, 'Andorra la Vella', 197),
+(169, 'Canillo', 197),
+(170, 'Encamp', 197),
+(171, 'La Massana', 197),
+(172, 'Les Escaldes', 197),
+(173, 'Ordino', 197),
+(174, 'Sant Julia de Loria', 197);
+
+--
+-- AUSTRIA
+--
+INSERT INTO `states` (`id`, `name`, `country_id`) VALUES
+  (277, 'Bundesland Salzburg', 198),
+  (278, 'Bundesland Steiermark', 198),
+  (279, 'Bundesland Tirol', 198),
+  (280, 'Burgenland', 198),
+  (281, 'Carinthia', 198),
+  (282, 'Karnten', 198),
+  (283, 'Liezen', 198),
+  (284, 'Lower Austria', 198),
+  (285, 'Niederosterreich', 198),
+  (286, 'Oberosterreich', 198),
+  (287, 'Salzburg', 198),
+  (288, 'Schleswig-Holstein', 198),
+  (289, 'Steiermark', 198),
+  (290, 'Styria', 198),
+  (291, 'Tirol', 198),
+  (292, 'Upper Austria', 198),
+  (293, 'Vorarlberg', 198),
+  (294, 'Wien', 198);
+
+--
+-- BELARUS
+--
+INSERT INTO `states` (`id`, `name`, `country_id`) VALUES
+  (413, 'Brest', 199),
+  (414, 'Homjel''', 199),
+  (415, 'Hrodna', 199),
+  (416, 'Mahiljow', 199),
+  (417, 'Mahilyowskaya Voblasts', 199),
+  (418, 'Minsk', 199),
+  (419, 'Minskaja Voblasts''', 199),
+  (420, 'Petrik', 199),
+  (421, 'Vicebsk', 199);

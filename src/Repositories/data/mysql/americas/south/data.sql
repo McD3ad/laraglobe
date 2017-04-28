@@ -20,3 +20,32 @@ INSERT INTO `countries` (`id`,`region_id`, `code3l`, `code2l`, `name`, `name_off
   /*!40000 ALTER TABLE `countries`
   ENABLE KEYS */;
 UNLOCK TABLES;
+
+--
+-- ARGENTINA
+--
+INSERT INTO `states` (`id`, `name`, `country_id`) VALUES
+  (208, 'Buenos Aires', 95),
+  (209, 'Catamarca', 95),
+  (210, 'Chaco', 95),
+  (211, 'Chubut', 95),
+  (212, 'Cordoba', 95),
+  (213, 'Corrientes', 95),
+  (214, 'Distrito Federal', 95),
+  (215, 'Entre Rios', 95),
+  (216, 'Formosa', 95),
+  (217, 'Jujuy', 95),
+  (218, 'La Pampa', 95),
+  (219, 'La Rioja', 95),
+  (220, 'Mendoza', 95),
+  (221, 'Misiones', 95),
+  (222, 'Neuquen', 95),
+  (223, 'Rio Negro', 95),
+  (224, 'Salta', 95),
+  (225, 'San Juan', 95),
+  (226, 'San Luis', 95),
+  (227, 'Santa Cruz', 95),
+  (228, 'Santa Fe', 95),
+  (229, 'Santiago del Estero', 95),
+  (230, 'Tierra del Fuego', 95),
+  (231, 'Tucuman', 95);

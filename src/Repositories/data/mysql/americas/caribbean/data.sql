@@ -33,3 +33,65 @@ INSERT INTO `countries` (`id`,`region_id`, `code3l`, `code2l`, `name`, `name_off
   /*!40000 ALTER TABLE `countries`
   ENABLE KEYS */;
 UNLOCK TABLES;
+
+--
+-- ANGUILLA
+--
+INSERT INTO `states` (`id`, `name`, `country_id`) VALUES
+  (193, 'Other Provinces', 59);
+
+--
+-- ANTIGUA AND BARBUDA
+--
+INSERT INTO `states` (`id`, `name`, `country_id`) VALUES
+  (201, 'Barbuda', 60),
+  (202, 'Saint George', 60),
+  (203, 'Saint John', 60),
+  (204, 'Saint Mary', 60),
+  (205, 'Saint Paul', 60),
+  (206, 'Saint Peter', 60),
+  (207, 'Saint Philip', 60);
+
+--
+-- ARUBA
+--
+INSERT INTO `states` (`id`, `name`, `country_id`) VALUES
+  (244, 'Aruba', 61);
+
+--
+-- BAHAMAS
+--
+INSERT INTO `states` (`id`, `name`, `country_id`) VALUES
+  (310, 'Abaco', 62),
+  (311, 'Acklins Island', 62),
+  (312, 'Andros', 62),
+  (313, 'Berry Islands', 62),
+  (314, 'Biminis', 62),
+  (315, 'Cat Island', 62),
+  (316, 'Crooked Island', 62),
+  (317, 'Eleuthera', 62),
+  (318, 'Exuma and Cays', 62),
+  (319, 'Grand Bahama', 62),
+  (320, 'Inagua Islands', 62),
+  (321, 'Long Island', 62),
+  (322, 'Mayaguana', 62),
+  (323, 'New Providence', 62),
+  (324, 'Ragged Island', 62),
+  (325, 'Rum Cay', 62),
+  (326, 'San Salvador', 62);
+
+--
+-- BARBADOS
+--
+INSERT INTO `states` (`id`, `name`, `country_id`) VALUES
+  (402, 'Christ Church', 63),
+  (403, 'Saint Andrew', 63),
+  (404, 'Saint George', 63),
+  (405, 'Saint James', 63),
+  (406, 'Saint John', 63),
+  (407, 'Saint Joseph', 63),
+  (408, 'Saint Lucy', 63),
+  (409, 'Saint Michael', 63),
+  (410, 'Saint Peter', 63),
+  (411, 'Saint Philip', 63),
+  (412, 'Saint Thomas', 63);

@@ -37,3 +37,61 @@ INSERT INTO `countries` (`id`,`region_id`, `code3l`, `code2l`, `name`, `name_off
   /*!40000 ALTER TABLE `countries`
   ENABLE KEYS */;
 UNLOCK TABLES;
+
+--
+-- AMERICAN SAMOA
+--
+INSERT INTO `states` (`id`, `name`, `country_id`) VALUES
+  (164, 'Eastern', 164),
+  (165, 'Manu''a', 164),
+  (166, 'Swains Island', 164),
+  (167, 'Western', 164);
+
+--
+-- ANTARCTICA
+--
+INSERT INTO `states` (`id`, `name`, `country_id`) VALUES
+  (194, 'Sector claimed by Argentina/Ch', 165),
+  (195, 'Sector claimed by Argentina/UK', 165),
+  (196, 'Sector claimed by Australia', 165),
+  (197, 'Sector claimed by France', 165),
+  (198, 'Sector claimed by New Zealand', 165),
+  (199, 'Sector claimed by Norway', 165),
+  (200, 'Unclaimed Sector', 165);
+
+--
+-- AUSTRALIA
+--
+INSERT INTO `states` (`id`, `name`, `country_id`) VALUES
+  (245, 'Auckland', 166),
+  (246, 'Australian Capital Territory', 166),
+  (247, 'Balgowlah', 166),
+  (248, 'Balmain', 166),
+  (249, 'Bankstown', 166),
+  (250, 'Baulkham Hills', 166),
+  (251, 'Bonnet Bay', 166),
+  (252, 'Camberwell', 166),
+  (253, 'Carole Park', 166),
+  (254, 'Castle Hill', 166),
+  (255, 'Caulfield', 166),
+  (256, 'Chatswood', 166),
+  (257, 'Cheltenham', 166),
+  (258, 'Cherrybrook', 166),
+  (259, 'Clayton', 166),
+  (260, 'Collingwood', 166),
+  (261, 'Frenchs Forest', 166),
+  (262, 'Hawthorn', 166),
+  (263, 'Jannnali', 166),
+  (264, 'Knoxfield', 166),
+  (265, 'Melbourne', 166),
+  (266, 'New South Wales', 166),
+  (267, 'Northern Territory', 166),
+  (268, 'Perth', 166),
+  (269, 'Queensland', 166),
+  (270, 'South Australia', 166),
+  (271, 'Tasmania', 166),
+  (272, 'Templestowe', 166),
+  (273, 'Victoria', 166),
+  (274, 'Werribee south', 166),
+  (275, 'Western Australia', 166),
+  (276, 'Wheeler', 166);

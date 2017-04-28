@@ -19,3 +19,18 @@ INSERT INTO `countries` (`id`,`region_id`, `code3l`, `code2l`, `name`, `name_off
   /*!40000 ALTER TABLE `countries`
   ENABLE KEYS */;
 UNLOCK TABLES;
+
+--
+-- BAHRAIN
+--
+INSERT INTO `states` (`id`, `name`, `country_id`) VALUES
+  (327, '''Isa', 150),
+  (328, 'Badiyah', 150),
+  (329, 'Hidd', 150),
+  (330, 'Jidd Hafs', 150),
+  (331, 'Mahama', 150),
+  (332, 'Manama', 150),
+  (333, 'Sitrah', 150),
+  (334, 'al-Manamah', 150),
+  (335, 'al-Muharraq', 150),
+  (336, 'ar-Rifa''a', 150);
