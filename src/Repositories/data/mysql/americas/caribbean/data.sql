@@ -1,3 +1,6 @@
+--
+-- Dumping data for table `countries` (THE CARIBBEAN REGION)
+--
 LOCK TABLES `countries` WRITE;
 /*!40000 ALTER TABLE `countries`
   DISABLE KEYS */;
