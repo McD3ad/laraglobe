@@ -156,3 +156,59 @@ INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
   (805, 'Valle del Cauca', 47),
   (806, 'Vaupes', 47),
   (807, 'Vichada', 47);
+
+--
+-- ECUADOR
+--
+INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  (1022, 'Azuay', 63),
+  (1023, 'Bolivar', 63),
+  (1024, 'Canar', 63),
+  (1025, 'Carchi', 63),
+  (1026, 'Chimborazo', 63),
+  (1027, 'Cotopaxi', 63),
+  (1028, 'El Oro', 63),
+  (1029, 'Esmeraldas', 63),
+  (1030, 'Galapagos', 63),
+  (1031, 'Guayas', 63),
+  (1032, 'Imbabura', 63),
+  (1033, 'Loja', 63),
+  (1034, 'Los Rios', 63),
+  (1035, 'Manabi', 63),
+  (1036, 'Morona Santiago', 63),
+  (1037, 'Napo', 63),
+  (1038, 'Orellana', 63),
+  (1039, 'Pastaza', 63),
+  (1040, 'Pichincha', 63),
+  (1041, 'Sucumbios', 63),
+  (1042, 'Tungurahua', 63),
+  (1043, 'Zamora Chinchipe', 63);
+
+--
+-- FALKLAND ISLANDS
+--
+INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  (1135, 'Falkland Islands', 71),
+  (1136, 'South Georgia', 71);
+
+--
+-- FRENCH GUIANA
+--
+INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  (1315, 'Cayenne', 76),
+  (1316, 'Saint-Laurent-du-Maroni', 76);
+
+--
+-- GUYANA
+--
+INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  (1597, 'Barima-Waini', 94),
+  (1598, 'Cuyuni-Mazaruni', 94),
+  (1599, 'Demerara-Mahaica', 94),
+  (1600, 'East Berbice-Corentyne', 94),
+  (1601, 'Essequibo Islands-West Demerar', 94),
+  (1602, 'Mahaica-Berbice', 94),
+  (1603, 'Pomeroon-Supenaam', 94),
+  (1604, 'Potaro-Siparuni', 94),
+  (1605, 'Upper Demerara-Berbice', 94),
+  (1606, 'Upper Takutu-Upper Essequibo', 94);

@@ -352,6 +352,31 @@ INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
 (820, 'Sangha', 49);
 
 --
+-- COTE D'IVOIRE
+--
+INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  (850, 'Abidjan', 53),
+  (851, 'Agneby', 53),
+  (852, 'Bafing', 53),
+  (853, 'Denguele', 53),
+  (854, 'Dix-huit Montagnes', 53),
+  (855, 'Fromager', 53),
+  (856, 'Haut-Sassandra', 53),
+  (857, 'Lacs', 53),
+  (858, 'Lagunes', 53),
+  (859, 'Marahoue', 53),
+  (860, 'Moyen-Cavally', 53),
+  (861, 'Moyen-Comoe', 53),
+  (862, 'N''zi-Comoe', 53),
+  (863, 'Sassandra', 53),
+  (864, 'Savanes', 53),
+  (865, 'Sud-Bandama', 53),
+  (866, 'Sud-Comoe', 53),
+  (867, 'Vallee du Bandama', 53),
+  (868, 'Worodougou', 53),
+  (869, 'Zanzan', 53);
+
+--
 -- DEMOCRATIC REPUBLIC OF CONGO
 --
 INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
@@ -366,3 +391,184 @@ INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
   (829, 'Maniema', 50),
   (830, 'Nord-Kivu', 50),
   (831, 'Sud-Kivu', 50);
+
+--
+-- DJIBOUTI
+--
+INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  (964, '''Ali Sabih', 59),
+  (965, 'Dikhil', 59),
+  (966, 'Jibuti', 59),
+  (967, 'Tajurah', 59),
+  (968, 'Ubuk', 59);
+
+--
+-- EGYPT
+--
+INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  (1044, 'Aswan', 64),
+  (1045, 'Asyut', 64),
+  (1046, 'Bani Suwayf', 64),
+  (1047, 'Bur Sa''id', 64),
+  (1048, 'Cairo', 64),
+  (1049, 'Dumyat', 64),
+  (1050, 'Kafr-ash-Shaykh', 64),
+  (1051, 'Matruh', 64),
+  (1052, 'Muhafazat ad Daqahliyah', 64),
+  (1053, 'Muhafazat al Fayyum', 64),
+  (1054, 'Muhafazat al Gharbiyah', 64),
+  (1055, 'Muhafazat al Iskandariyah', 64),
+  (1056, 'Muhafazat al Qahirah', 64),
+  (1057, 'Qina', 64),
+  (1058, 'Sawhaj', 64),
+  (1059, 'Sina al-Janubiyah', 64),
+  (1060, 'Sina ash-Shamaliyah', 64),
+  (1061, 'ad-Daqahliyah', 64),
+  (1062, 'al-Bahr-al-Ahmar', 64),
+  (1063, 'al-Buhayrah', 64),
+  (1064, 'al-Fayyum', 64),
+  (1065, 'al-Gharbiyah', 64),
+  (1066, 'al-Iskandariyah', 64),
+  (1067, 'al-Ismailiyah', 64),
+  (1068, 'al-Jizah', 64),
+  (1069, 'al-Minufiyah', 64),
+  (1070, 'al-Minya', 64),
+  (1071, 'al-Qahira', 64),
+  (1072, 'al-Qalyubiyah', 64),
+  (1073, 'al-Uqsur', 64),
+  (1074, 'al-Wadi al-Jadid', 64),
+  (1075, 'as-Suways', 64),
+  (1076, 'ash-Sharqiyah', 64);
+
+--
+-- EQUATORIAL GUINEA
+--
+INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  (1091, 'Annobon', 66),
+  (1092, 'Bioko Norte', 66),
+  (1093, 'Bioko Sur', 66),
+  (1094, 'Centro Sur', 66),
+  (1095, 'Kie-Ntem', 66),
+  (1096, 'Litoral', 66),
+  (1097, 'Wele-Nzas', 66);
+
+--
+-- ERITREA
+--
+INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  (1098, 'Anseba', 67),
+  (1099, 'Debub', 67),
+  (1100, 'Debub-Keih-Bahri', 67),
+  (1101, 'Gash-Barka', 67),
+  (1102, 'Maekel', 67),
+  (1103, 'Semien-Keih-Bahri', 67);
+
+--
+-- ETHIOPIA
+--
+INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  (1119, 'Addis Abeba', 69),
+  (1120, 'Afar', 69),
+  (1121, 'Amhara', 69),
+  (1122, 'Benishangul', 69),
+  (1123, 'Diredawa', 69),
+  (1124, 'Gambella', 69),
+  (1125, 'Harar', 69),
+  (1126, 'Jigjiga', 69),
+  (1127, 'Mekele', 69),
+  (1128, 'Oromia', 69),
+  (1129, 'Somali', 69),
+  (1130, 'Southern', 69),
+  (1131, 'Tigray', 69);
+
+--
+-- GABON
+--
+INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  (1325, 'Estuaire', 79),
+  (1326, 'Haut-Ogooue', 79),
+  (1327, 'Moyen-Ogooue', 79),
+  (1328, 'Ngounie', 79),
+  (1329, 'Nyanga', 79),
+  (1330, 'Ogooue-Ivindo', 79),
+  (1331, 'Ogooue-Lolo', 79),
+  (1332, 'Ogooue-Maritime', 79),
+  (1333, 'Woleu-Ntem', 79);
+
+--
+-- GAMBIA
+--
+INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  (1334, 'Banjul', 80),
+  (1335, 'Basse', 80),
+  (1336, 'Brikama', 80),
+  (1337, 'Janjanbureh', 80),
+  (1338, 'Kanifing', 80),
+  (1339, 'Kerewan', 80),
+  (1340, 'Kuntaur', 80),
+  (1341, 'Mansakonko', 80);
+
+--
+-- GHANA
+--
+INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  (1401, 'Ashanti', 83),
+  (1402, 'Brong-Ahafo', 83),
+  (1403, 'Central', 83),
+  (1404, 'Eastern', 83),
+  (1405, 'Greater Accra', 83),
+  (1406, 'Northern', 83),
+  (1407, 'Upper East', 83),
+  (1408, 'Upper West', 83),
+  (1409, 'Volta', 83),
+  (1410, 'Western', 83);
+
+--
+-- GUINEA
+--
+INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  (1557, 'Beyla', 92),
+  (1558, 'Boffa', 92),
+  (1559, 'Boke', 92),
+  (1560, 'Conakry', 92),
+  (1561, 'Coyah', 92),
+  (1562, 'Dabola', 92),
+  (1563, 'Dalaba', 92),
+  (1564, 'Dinguiraye', 92),
+  (1565, 'Faranah', 92),
+  (1566, 'Forecariah', 92),
+  (1567, 'Fria', 92),
+  (1568, 'Gaoual', 92),
+  (1569, 'Gueckedou', 92),
+  (1570, 'Kankan', 92),
+  (1571, 'Kerouane', 92),
+  (1572, 'Kindia', 92),
+  (1573, 'Kissidougou', 92),
+  (1574, 'Koubia', 92),
+  (1575, 'Koundara', 92),
+  (1576, 'Kouroussa', 92),
+  (1577, 'Labe', 92),
+  (1578, 'Lola', 92),
+  (1579, 'Macenta', 92),
+  (1580, 'Mali', 92),
+  (1581, 'Mamou', 92),
+  (1582, 'Mandiana', 92),
+  (1583, 'Nzerekore', 92),
+  (1584, 'Pita', 92),
+  (1585, 'Siguiri', 92),
+  (1586, 'Telimele', 92),
+  (1587, 'Tougue', 92),
+  (1588, 'Yomou', 92);
+
+--
+-- GUINEA BISSAU
+--
+INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  (1589, 'Bafata', 93),
+  (1590, 'Bissau', 93),
+  (1591, 'Bolama', 93),
+  (1592, 'Cacheu', 93),
+  (1593, 'Gabu', 93),
+  (1594, 'Oio', 93),
+  (1595, 'Quinara', 93),
+  (1596, 'Tombali', 93);

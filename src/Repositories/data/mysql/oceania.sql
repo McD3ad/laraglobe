@@ -132,3 +132,58 @@ INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
   (840, 'Rakahanga', 51),
   (841, 'Rarotonga', 51),
   (842, 'Tongareva', 51);
+
+--
+-- FIJI
+--
+INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  (1146, 'Central', 73),
+  (1147, 'Eastern', 73),
+  (1148, 'Northern', 73),
+  (1149, 'South Pacific', 73),
+  (1150, 'Western', 73);
+
+--
+-- FRENCH POLYNESIA
+--
+INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  (1317, 'Iles du Vent', 77),
+  (1318, 'Iles sous le Vent', 77),
+  (1319, 'Marquesas', 77),
+  (1320, 'Tuamotu', 77),
+  (1321, 'Tubuai', 77);
+
+--
+-- FRENCH SOUTHERN AND ANTARCTIC TERRITORIES
+--
+INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  (1322, 'Amsterdam', 78),
+  (1323, 'Crozet Islands', 78),
+  (1324, 'Kerguelen', 78);
+
+--
+-- GUAM
+--
+INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  (1507, 'Agana Heights', 89),
+  (1508, 'Agat', 89),
+  (1509, 'Barrigada', 89),
+  (1510, 'Chalan-Pago-Ordot', 89),
+  (1511, 'Dededo', 89),
+  (1512, 'Hagatna', 89),
+  (1513, 'Inarajan', 89),
+  (1514, 'Mangilao', 89),
+  (1515, 'Merizo', 89),
+  (1516, 'Mongmong-Toto-Maite', 89),
+  (1517, 'Santa Rita', 89),
+  (1518, 'Sinajana', 89),
+  (1519, 'Talofofo', 89),
+  (1520, 'Tamuning', 89),
+  (1521, 'Yigo', 89),
+  (1522, 'Yona', 89);
+
+--
+-- HEARD AND MCDONALD ISLANDS
+--
+INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  (1616, 'Heard and McDonald Islands', 96);

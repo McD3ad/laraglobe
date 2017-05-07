@@ -104,3 +104,112 @@ INSERT INTO `states` (`id`, `name`, `country_id`) VALUES
 --
 INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
   (685, 'Grand Cayman', 40);
+
+--
+-- CUBA
+--
+INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  (893, 'Camaguey', 55),
+  (894, 'Ciego de Avila', 55),
+  (895, 'Cienfuegos', 55),
+  (896, 'Ciudad de la Habana', 55),
+  (897, 'Granma', 55),
+  (898, 'Guantanamo', 55),
+  (899, 'Habana', 55),
+  (900, 'Holguin', 55),
+  (901, 'Isla de la Juventud', 55),
+  (902, 'La Habana', 55),
+  (903, 'Las Tunas', 55),
+  (904, 'Matanzas', 55),
+  (905, 'Pinar del Rio', 55),
+  (906, 'Sancti Spiritus', 55),
+  (907, 'Santiago de Cuba', 55),
+  (908, 'Villa Clara', 55);
+
+--
+-- DOMINICA
+--
+INSERT INTO `states` (`id`, `name`, `country_id`) VALUE\
+(969, 'Saint Andrew', 60),
+(970, 'Saint David', 60),
+(971, 'Saint George', 60),
+(972, 'Saint John', 60),
+(973, 'Saint Joseph', 60),
+(974, 'Saint Luke', 60),
+(975, 'Saint Mark', 60),
+(976, 'Saint Patrick', 60),
+(977, 'Saint Paul', 60),
+(978, 'Saint Peter', 60);
+
+--
+-- DOMINICAN REPUBLIC
+--
+INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  (979, 'Azua', 61),
+  (980, 'Bahoruco', 61),
+  (981, 'Barahona', 61),
+  (982, 'Dajabon', 61),
+  (983, 'Distrito Nacional', 61),
+  (984, 'Duarte', 61),
+  (985, 'El Seybo', 61),
+  (986, 'Elias Pina', 61),
+  (987, 'Espaillat', 61),
+  (988, 'Hato Mayor', 61),
+  (989, 'Independencia', 61),
+  (990, 'La Altagracia', 61),
+  (991, 'La Romana', 61),
+  (992, 'La Vega', 61),
+  (993, 'Maria Trinidad Sanchez', 61),
+  (994, 'Monsenor Nouel', 61),
+  (995, 'Monte Cristi', 61),
+  (996, 'Monte Plata', 61),
+  (997, 'Pedernales', 61),
+  (998, 'Peravia', 61),
+  (999, 'Puerto Plata', 61),
+  (1000, 'Salcedo', 61),
+  (1001, 'Samana', 61),
+  (1002, 'San Cristobal', 61),
+  (1003, 'San Juan', 61),
+  (1004, 'San Pedro de Macoris', 61),
+  (1005, 'Sanchez Ramirez', 61),
+  (1006, 'Santiago', 61),
+  (1007, 'Santiago Rodriguez', 61),
+  (1008, 'Valverde', 61);
+
+--
+-- GRENADA
+--
+INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  (1493, 'Carriacou-Petite Martinique', 87),
+  (1494, 'Saint Andrew', 87),
+  (1495, 'Saint Davids', 87),
+  (1496, 'Saint George''s', 87),
+  (1497, 'Saint John', 87),
+  (1498, 'Saint Mark', 87),
+  (1499, 'Saint Patrick', 87);
+
+--
+-- GUADELOUPE
+--
+INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  (1500, 'Basse-Terre', 88),
+  (1501, 'Grande-Terre', 88),
+  (1502, 'Iles des Saintes', 88),
+  (1503, 'La Desirade', 88),
+  (1504, 'Marie-Galante', 88),
+  (1505, 'Saint Barthelemy', 88),
+  (1506, 'Saint Martin', 88);
+
+--
+-- HAITI
+--
+INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  (1607, 'Artibonite', 95),
+  (1608, 'Centre', 95),
+  (1609, 'Grand''Anse', 95),
+  (1610, 'Nord', 95),
+  (1611, 'Nord-Est', 95),
+  (1612, 'Nord-Ouest', 95),
+  (1613, 'Ouest', 95),
+  (1614, 'Sud', 95),
+  (1615, 'Sud-Est', 95);

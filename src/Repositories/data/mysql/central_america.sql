@@ -39,3 +39,73 @@ INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
   (847, 'Limon', 52),
   (848, 'Puntarenas', 52),
   (849, 'San Jose', 52);
+
+--
+-- EL SALVADOR
+--
+INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  (1077, 'Ahuachapan', 65),
+  (1078, 'Cabanas', 65),
+  (1079, 'Chalatenango', 65),
+  (1080, 'Cuscatlan', 65),
+  (1081, 'La Libertad', 65),
+  (1082, 'La Paz', 65),
+  (1083, 'La Union', 65),
+  (1084, 'Morazan', 65),
+  (1085, 'San Miguel', 65),
+  (1086, 'San Salvador', 65),
+  (1087, 'San Vicente', 65),
+  (1088, 'Santa Ana', 65),
+  (1089, 'Sonsonate', 65),
+  (1090, 'Usulutan', 65);
+
+--
+-- GUATEMALA
+--
+INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  (1523, 'Alta Verapaz', 90),
+  (1524, 'Baja Verapaz', 90),
+  (1525, 'Chimaltenango', 90),
+  (1526, 'Chiquimula', 90),
+  (1527, 'El Progreso', 90),
+  (1528, 'Escuintla', 90),
+  (1529, 'Guatemala', 90),
+  (1530, 'Huehuetenango', 90),
+  (1531, 'Izabal', 90),
+  (1532, 'Jalapa', 90),
+  (1533, 'Jutiapa', 90),
+  (1534, 'Peten', 90),
+  (1535, 'Quezaltenango', 90),
+  (1536, 'Quiche', 90),
+  (1537, 'Retalhuleu', 90),
+  (1538, 'Sacatepequez', 90),
+  (1539, 'San Marcos', 90),
+  (1540, 'Santa Rosa', 90),
+  (1541, 'Solola', 90),
+  (1542, 'Suchitepequez', 90),
+  (1543, 'Totonicapan', 90),
+  (1544, 'Zacapa', 90);
+
+--
+-- HONDURAS
+--
+INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  (1617, 'Atlantida', 97),
+  (1618, 'Choluteca', 97),
+  (1619, 'Colon', 97),
+  (1620, 'Comayagua', 97),
+  (1621, 'Copan', 97),
+  (1622, 'Cortes', 97),
+  (1623, 'Distrito Central', 97),
+  (1624, 'El Paraiso', 97),
+  (1625, 'Francisco Morazan', 97),
+  (1626, 'Gracias a Dios', 97),
+  (1627, 'Intibuca', 97),
+  (1628, 'Islas de la Bahia', 97),
+  (1629, 'La Paz', 97),
+  (1630, 'Lempira', 97),
+  (1631, 'Ocotepeque', 97),
+  (1632, 'Olancho', 97),
+  (1633, 'Santa Barbara', 97),
+  (1634, 'Valle', 97),
+  (1635, 'Yoro', 97);

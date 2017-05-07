@@ -341,3 +341,83 @@ INSERT INTO `states` (`id`, `name`, `country_id`) VALUES
   (39, 'Uttarakhand', 125),
   (40, 'Vaishali', 125),
   (41, 'West Bengal', 125);
+
+--
+-- TIMOR LESTE (EAST TIMOR)
+--
+INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  (1009, 'Aileu', 62),
+  (1010, 'Ainaro', 62),
+  (1011, 'Ambeno', 62),
+  (1012, 'Baucau', 62),
+  (1013, 'Bobonaro', 62),
+  (1014, 'Cova Lima', 62),
+  (1015, 'Dili', 62),
+  (1016, 'Ermera', 62),
+  (1017, 'Lautem', 62),
+  (1018, 'Liquica', 62),
+  (1019, 'Manatuto', 62),
+  (1020, 'Manufahi', 62),
+  (1021, 'Viqueque', 62);
+
+--
+-- GEORGIA
+--
+INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  (1342, 'Abhasia', 81),
+  (1343, 'Ajaria', 81),
+  (1344, 'Guria', 81),
+  (1345, 'Imereti', 81),
+  (1346, 'Kaheti', 81),
+  (1347, 'Kvemo Kartli', 81),
+  (1348, 'Mcheta-Mtianeti', 81),
+  (1349, 'Racha', 81),
+  (1350, 'Samagrelo-Zemo Svaneti', 81),
+  (1351, 'Samche-Zhavaheti', 81),
+  (1352, 'Shida Kartli', 81),
+  (1353, 'Tbilisi', 81);
+
+--
+-- HONG KONG S.A.R.
+--
+INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  (1636, 'Hong Kong', 98);
+
+--
+-- INDONESIA
+--
+INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  (1666, 'Aceh', 102),
+  (1667, 'Bali', 102),
+  (1668, 'Bangka-Belitung', 102),
+  (1669, 'Banten', 102),
+  (1670, 'Bengkulu', 102),
+  (1671, 'Gandaria', 102),
+  (1672, 'Gorontalo', 102),
+  (1673, 'Jakarta', 102),
+  (1674, 'Jambi', 102),
+  (1675, 'Jawa Barat', 102),
+  (1676, 'Jawa Tengah', 102),
+  (1677, 'Jawa Timur', 102),
+  (1678, 'Kalimantan Barat', 102),
+  (1679, 'Kalimantan Selatan', 102),
+  (1680, 'Kalimantan Tengah', 102),
+  (1681, 'Kalimantan Timur', 102),
+  (1682, 'Kendal', 102),
+  (1683, 'Lampung', 102),
+  (1684, 'Maluku', 102),
+  (1685, 'Maluku Utara', 102),
+  (1686, 'Nusa Tenggara Barat', 102),
+  (1687, 'Nusa Tenggara Timur', 102),
+  (1688, 'Papua', 102),
+  (1689, 'Riau', 102),
+  (1690, 'Riau Kepulauan', 102),
+  (1691, 'Solo', 102),
+  (1692, 'Sulawesi Selatan', 102),
+  (1693, 'Sulawesi Tengah', 102),
+  (1694, 'Sulawesi Tenggara', 102),
+  (1695, 'Sulawesi Utara', 102),
+  (1696, 'Sumatera Barat', 102),
+  (1697, 'Sumatera Selatan', 102),
+  (1698, 'Sumatera Utara', 102),
+  (1699, 'Yogyakarta', 102);

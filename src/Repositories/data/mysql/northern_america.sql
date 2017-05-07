@@ -38,3 +38,27 @@ INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
   (673, 'Quebec', 38),
   (674, 'Saskatchewan', 38),
   (675, 'Yukon', 38);
+
+--
+-- GREENLAND
+--
+INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  (1474, 'Aasiaat', 86),
+  (1475, 'Ammassalik', 86),
+  (1476, 'Illoqqortoormiut', 86),
+  (1477, 'Ilulissat', 86),
+  (1478, 'Ivittuut', 86),
+  (1479, 'Kangaatsiaq', 86),
+  (1480, 'Maniitsoq', 86),
+  (1481, 'Nanortalik', 86),
+  (1482, 'Narsaq', 86),
+  (1483, 'Nuuk', 86),
+  (1484, 'Paamiut', 86),
+  (1485, 'Qaanaaq', 86),
+  (1486, 'Qaqortoq', 86),
+  (1487, 'Qasigiannguit', 86),
+  (1488, 'Qeqertarsuaq', 86),
+  (1489, 'Sisimiut', 86),
+  (1490, 'Udenfor kommunal inddeling', 86),
+  (1491, 'Upernavik', 86),
+  (1492, 'Uummannaq', 86);
