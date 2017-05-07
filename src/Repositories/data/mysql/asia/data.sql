@@ -10,7 +10,7 @@ INSERT INTO `countries` (`id`,`region_id`, `code3l`, `code2l`, `name`, `name_off
   (117, 2, 'AZE', 'AZ', 'Azerbaijan', 'the Republic of Azerbaijan', 'AZ-32.png', 'AZ-128.png', 40.35321757, 47.46706372, 7),
   (118, 2, 'BGD', 'BD', 'Bangladesh', 'the People\'s Republic of Bangladesh', 'BD-32.png', 'BD-128.png', 24.08273251, 90.49915527, 7),
   (119, 2, 'BTN', 'BT', 'Bhutan', 'the Kingdom of Bhutan', 'BT-32.png', 'BT-128.png', 27.50752756, 90.43360300, 8),
-  (120, 2, 'BRN', 'BN', 'Brunei Darussalam', 'Brunei Darussalam', 'BN-32.png', 'BN-128.png', 4.54189364, 114.60132823, 9),
+  (120, 2, 'BRN', 'BN', 'Brunei', 'Brunei Darussalam', 'BN-32.png', 'BN-128.png', 4.54189364, 114.60132823, 9),
   (121, 2, 'KHM', 'KH', 'Cambodia', 'the Kingdom of Cambodia', 'KH-32.png', 'KH-128.png', 12.83288883, 104.84814273, 7),
   (122, 2, 'CHN', 'CN', 'China', 'the People\'s Republic of China', 'CN-32.png', 'CN-128.png', 36.71457440, 103.55819197, 4),
   (123, 2, 'GEO', 'GE', 'Georgia', 'Georgia', 'GE-32.png', 'GE-128.png', 41.82754301, 44.17329916, 7),
@@ -187,6 +187,114 @@ INSERT INTO `states` (`id`, `name`, `country_id`) VALUES
   (399, 'Sunamganj', 118),
   (400, 'Tangayal', 118),
   (401, 'Thakurgaon', 118);
+
+--
+-- BHUTAN
+--
+INSERT INTO `states` (`id`, `name`, `country_id`) VALUES
+  (459, 'Bumthang', 25),
+  (460, 'Chhukha', 25),
+  (461, 'Chirang', 25),
+  (462, 'Daga', 25),
+  (463, 'Geylegphug', 25),
+  (464, 'Ha', 25),
+  (465, 'Lhuntshi', 25),
+  (466, 'Mongar', 25),
+  (467, 'Pemagatsel', 25),
+  (468, 'Punakha', 25),
+  (469, 'Rinpung', 25),
+  (470, 'Samchi', 25),
+  (471, 'Samdrup Jongkhar', 25),
+  (472, 'Shemgang', 25),
+  (473, 'Tashigang', 25),
+  (474, 'Timphu', 25),
+  (475, 'Tongsa', 25),
+  (476, 'Wangdiphodrang', 25);
+
+--
+-- BRUNEI
+--
+INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  (541, 'Belait', 32),
+  (542, 'Brunei-Muara', 32),
+  (543, 'Temburong', 32),
+  (544, 'Tutong', 32);
+
+--
+-- CAMBODIA
+--
+INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  (629, 'Banteay Mean Chey', 36),
+  (630, 'Bat Dambang', 36),
+  (631, 'Kampong Cham', 36),
+  (632, 'Kampong Chhnang', 36),
+  (633, 'Kampong Spoeu', 36),
+  (634, 'Kampong Thum', 36),
+  (635, 'Kampot', 36),
+  (636, 'Kandal', 36),
+  (637, 'Kaoh Kong', 36),
+  (638, 'Kracheh', 36),
+  (639, 'Krong Kaeb', 36),
+  (640, 'Krong Pailin', 36),
+  (641, 'Krong Preah Sihanouk', 36),
+  (642, 'Mondol Kiri', 36),
+  (643, 'Otdar Mean Chey', 36),
+  (644, 'Phnum Penh', 36),
+  (645, 'Pousat', 36),
+  (646, 'Preah Vihear', 36),
+  (647, 'Prey Veaeng', 36),
+  (648, 'Rotanak Kiri', 36),
+  (649, 'Siem Reab', 36),
+  (650, 'Stueng Traeng', 36),
+  (651, 'Svay Rieng', 36),
+  (652, 'Takaev', 36);
+
+--
+-- CHINA
+--
+INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  (731, 'Anhui', 44),
+  (732, 'Anhui Province', 44),
+  (733, 'Anhui Sheng', 44),
+  (734, 'Aomen', 44),
+  (735, 'Beijing', 44),
+  (736, 'Beijing Shi', 44),
+  (737, 'Chongqing', 44),
+  (738, 'Fujian', 44),
+  (739, 'Fujian Sheng', 44),
+  (740, 'Gansu', 44),
+  (741, 'Guangdong', 44),
+  (742, 'Guangdong Sheng', 44),
+  (743, 'Guangxi', 44),
+  (744, 'Guizhou', 44),
+  (745, 'Hainan', 44),
+  (746, 'Hebei', 44),
+  (747, 'Heilongjiang', 44),
+  (748, 'Henan', 44),
+  (749, 'Hubei', 44),
+  (750, 'Hunan', 44),
+  (751, 'Jiangsu', 44),
+  (752, 'Jiangsu Sheng', 44),
+  (753, 'Jiangxi', 44),
+  (754, 'Jilin', 44),
+  (755, 'Liaoning', 44),
+  (756, 'Liaoning Sheng', 44),
+  (757, 'Nei Monggol', 44),
+  (758, 'Ningxia Hui', 44),
+  (759, 'Qinghai', 44),
+  (760, 'Shaanxi', 44),
+  (761, 'Shandong', 44),
+  (762, 'Shandong Sheng', 44),
+  (763, 'Shanghai', 44),
+  (764, 'Shanxi', 44),
+  (765, 'Sichuan', 44),
+  (766, 'Tianjin', 44),
+  (767, 'Xianggang', 44),
+  (768, 'Xinjiang', 44),
+  (769, 'Xizang', 44),
+  (770, 'Yunnan', 44),
+  (771, 'Zhejiang', 44),
+  (772, 'Zhejiang Sheng', 44);
 
 --
 -- INDIA

@@ -16,3 +16,26 @@ INSERT INTO `countries` (`id`,`region_id`, `code3l`, `code2l`, `name`, `name_off
 /*!40000 ALTER TABLE `countries`
   ENABLE KEYS */;
 UNLOCK TABLES;
+
+--
+-- BELIZE
+--
+INSERT INTO `states` (`id`, `name`, `country_id`) VALUES
+  (439, 'Belize', 22),
+  (440, 'Cayo', 22),
+  (441, 'Corozal', 22),
+  (442, 'Orange Walk', 22),
+  (443, 'Stann Creek', 22),
+  (444, 'Toledo', 22);
+
+--
+-- COSTA RICA
+--
+INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  (843, 'Alajuela', 52),
+  (844, 'Cartago', 52),
+  (845, 'Guanacaste', 52),
+  (846, 'Heredia', 52),
+  (847, 'Limon', 52),
+  (848, 'Puntarenas', 52),
+  (849, 'San Jose', 52);

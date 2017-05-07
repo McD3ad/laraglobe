@@ -98,3 +98,37 @@ INSERT INTO `states` (`id`, `name`, `country_id`) VALUES
   (274, 'Werribee south', 166),
   (275, 'Western Australia', 166),
   (276, 'Wheeler', 166);
+
+--
+-- BRITISH INDIAN TERRITORY
+--
+INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  (540, 'British Indian Ocean Territory', 31);
+
+--
+-- CHRISTMAS ISLAND
+--
+INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  (773, 'Christmas Island', 45);
+
+--
+-- COCOS ISLANDS
+--
+INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  (774, 'Cocos (Keeling) Islands', 46);
+
+--
+-- COOK ISLANDS
+--
+INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  (832, 'Aitutaki', 51),
+  (833, 'Atiu', 51),
+  (834, 'Mangaia', 51),
+  (835, 'Manihiki', 51),
+  (836, 'Mauke', 51),
+  (837, 'Mitiaro', 51),
+  (838, 'Nassau', 51),
+  (839, 'Pukapuka', 51),
+  (840, 'Rakahanga', 51),
+  (841, 'Rarotonga', 51),
+  (842, 'Tongareva', 51);

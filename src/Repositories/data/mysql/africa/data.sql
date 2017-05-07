@@ -148,3 +148,221 @@ INSERT INTO `states` (`id`, `name`, `country_id`) VALUES
   (190, 'Namibe', 2),
   (191, 'Uige', 2),
   (192, 'Zaire', 2);
+
+--
+-- BENIN
+--
+INSERT INTO `states` (`id`, `name`, `country_id`) VALUES
+  (445, 'Alibori', 23),
+  (446, 'Atacora', 23),
+  (447, 'Atlantique', 23),
+  (448, 'Borgou', 23),
+  (449, 'Collines', 23),
+  (450, 'Couffo', 23),
+  (451, 'Donga', 23),
+  (452, 'Littoral', 23),
+  (453, 'Mono', 23),
+  (454, 'Oueme', 23),
+  (455, 'Plateau', 23),
+  (456, 'Zou', 23);
+
+--
+-- BOTSWANA
+--
+INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  (488, 'Central Bobonong', 28),
+  (489, 'Central Boteti', 28),
+  (490, 'Central Mahalapye', 28),
+  (491, 'Central Serowe-Palapye', 28),
+  (492, 'Central Tutume', 28),
+  (493, 'Chobe', 28),
+  (494, 'Francistown', 28),
+  (495, 'Gaborone', 28),
+  (496, 'Ghanzi', 28),
+  (497, 'Jwaneng', 28),
+  (498, 'Kgalagadi North', 28),
+  (499, 'Kgalagadi South', 28),
+  (500, 'Kgatleng', 28),
+  (501, 'Kweneng', 28),
+  (502, 'Lobatse', 28),
+  (503, 'Ngamiland', 28),
+  (504, 'Ngwaketse', 28),
+  (505, 'North East', 28),
+  (506, 'Okavango', 28),
+  (507, 'Orapa', 28),
+  (508, 'Selibe Phikwe', 28),
+  (509, 'South East', 28),
+  (510, 'Sowa', 28);
+
+--
+-- BURKINA FASO
+--
+INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  (575, 'Bale', 34),
+  (576, 'Bam', 34),
+  (577, 'Bazega', 34),
+  (578, 'Bougouriba', 34),
+  (579, 'Boulgou', 34),
+  (580, 'Boulkiemde', 34),
+  (581, 'Comoe', 34),
+  (582, 'Ganzourgou', 34),
+  (583, 'Gnagna', 34),
+  (584, 'Gourma', 34),
+  (585, 'Houet', 34),
+  (586, 'Ioba', 34),
+  (587, 'Kadiogo', 34),
+  (588, 'Kenedougou', 34),
+  (589, 'Komandjari', 34),
+  (590, 'Kompienga', 34),
+  (591, 'Kossi', 34),
+  (592, 'Kouritenga', 34),
+  (593, 'Kourweogo', 34),
+  (594, 'Leraba', 34),
+  (595, 'Mouhoun', 34),
+  (596, 'Nahouri', 34),
+  (597, 'Namentenga', 34),
+  (598, 'Noumbiel', 34),
+  (599, 'Oubritenga', 34),
+  (600, 'Oudalan', 34),
+  (601, 'Passore', 34),
+  (602, 'Poni', 34),
+  (603, 'Sanguie', 34),
+  (604, 'Sanmatenga', 34),
+  (605, 'Seno', 34),
+  (606, 'Sissili', 34),
+  (607, 'Soum', 34),
+  (608, 'Sourou', 34),
+  (609, 'Tapoa', 34),
+  (610, 'Tuy', 34),
+  (611, 'Yatenga', 34),
+  (612, 'Zondoma', 34),
+  (613, 'Zoundweogo', 34);
+
+--
+-- BURUNDI
+--
+INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  (614, 'Bubanza', 35),
+  (615, 'Bujumbura', 35),
+  (616, 'Bururi', 35),
+  (617, 'Cankuzo', 35),
+  (618, 'Cibitoke', 35),
+  (619, 'Gitega', 35),
+  (620, 'Karuzi', 35),
+  (621, 'Kayanza', 35),
+  (622, 'Kirundo', 35),
+  (623, 'Makamba', 35),
+  (624, 'Muramvya', 35),
+  (625, 'Muyinga', 35),
+  (626, 'Ngozi', 35),
+  (627, 'Rutana', 35),
+  (628, 'Ruyigi', 35);
+
+--
+-- CAMEROON
+--
+INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  (653, 'Adamaoua', 37),
+  (654, 'Centre', 37),
+  (655, 'Est', 37),
+  (656, 'Littoral', 37),
+  (657, 'Nord', 37),
+  (658, 'Nord Extreme', 37),
+  (659, 'Nordouest', 37),
+  (660, 'Ouest', 37),
+  (661, 'Sud', 37),
+  (662, 'Sudouest', 37);
+
+--
+-- CABO VERDE
+--
+INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  (676, 'Boavista', 39),
+  (677, 'Brava', 39),
+  (678, 'Fogo', 39),
+  (679, 'Maio', 39),
+  (680, 'Sal', 39),
+  (681, 'Santo Antao', 39),
+  (682, 'Sao Nicolau', 39),
+  (683, 'Sao Tiago', 39),
+  (684, 'Sao Vicente', 39);
+
+--
+-- CENTRAL AFRICAN REPUBLIC
+--
+INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  (686, 'Bamingui-Bangoran', 41),
+  (687, 'Bangui', 41),
+  (688, 'Basse-Kotto', 41),
+  (689, 'Haut-Mbomou', 41),
+  (690, 'Haute-Kotto', 41),
+  (691, 'Kemo', 41),
+  (692, 'Lobaye', 41),
+  (693, 'Mambere-Kadei', 41),
+  (694, 'Mbomou', 41),
+  (695, 'Nana-Gribizi', 41),
+  (696, 'Nana-Mambere', 41),
+  (697, 'Ombella Mpoko', 41),
+  (698, 'Ouaka', 41),
+  (699, 'Ouham', 41),
+  (700, 'Ouham-Pende', 41),
+  (701, 'Sangha-Mbaere', 41),
+  (702, 'Vakaga', 41);
+
+--
+-- CHAD
+--
+INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  (703, 'Batha', 42),
+  (704, 'Biltine', 42),
+  (705, 'Bourkou-Ennedi-Tibesti', 42),
+  (706, 'Chari-Baguirmi', 42),
+  (707, 'Guera', 42),
+  (708, 'Kanem', 42),
+  (709, 'Lac', 42),
+  (710, 'Logone Occidental', 42),
+  (711, 'Logone Oriental', 42),
+  (712, 'Mayo-Kebbi', 42),
+  (713, 'Moyen-Chari', 42),
+  (714, 'Ouaddai', 42),
+  (715, 'Salamat', 42),
+  (716, 'Tandjile', 42);
+
+--
+-- COMOROS
+--
+INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  (808, 'Mwali', 48),
+  (809, 'Njazidja', 48),
+  (810, 'Nzwani', 48);
+
+--
+-- CONGO
+--
+INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+(811, 'Bouenza', 49),
+(812, 'Brazzaville', 49),
+(813, 'Cuvette', 49),
+(814, 'Kouilou', 49),
+(815, 'Lekoumou', 49),
+(816, 'Likouala', 49),
+(817, 'Niari', 49),
+(818, 'Plateaux', 49),
+(819, 'Pool', 49),
+(820, 'Sangha', 49);
+
+--
+-- DEMOCRATIC REPUBLIC OF CONGO
+--
+INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  (821, 'Bandundu', 50),
+  (822, 'Bas-Congo', 50),
+  (823, 'Equateur', 50),
+  (824, 'Haut-Congo', 50),
+  (825, 'Kasai-Occidental', 50),
+  (826, 'Kasai-Oriental', 50),
+  (827, 'Katanga', 50),
+  (828, 'Kinshasa', 50),
+  (829, 'Maniema', 50),
+  (830, 'Nord-Kivu', 50),
+  (831, 'Sud-Kivu', 50);

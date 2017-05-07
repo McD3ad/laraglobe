@@ -98,3 +98,9 @@ INSERT INTO `states` (`id`, `name`, `country_id`) VALUES
   (410, 'Saint Peter', 63),
   (411, 'Saint Philip', 63),
   (412, 'Saint Thomas', 63);
+
+--
+-- CAYMAN ISLANDS
+--
+INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  (685, 'Grand Cayman', 40);

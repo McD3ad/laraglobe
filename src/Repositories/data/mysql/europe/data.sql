@@ -152,3 +152,73 @@ INSERT INTO `states` (`id`, `name`, `country_id`) VALUES
   (419, 'Minskaja Voblasts''', 199),
   (420, 'Petrik', 199),
   (421, 'Vicebsk', 199);
+
+--
+-- BELGIUM
+--
+INSERT INTO `states` (`id`, `name`, `country_id`) VALUES
+  (422, 'Antwerpen', 21),
+  (423, 'Berchem', 21),
+  (424, 'Brabant', 21),
+  (425, 'Brabant Wallon', 21),
+  (426, 'Brussel', 21),
+  (427, 'East Flanders', 21),
+  (428, 'Hainaut', 21),
+  (429, 'Liege', 21),
+  (430, 'Limburg', 21),
+  (431, 'Luxembourg', 21),
+  (432, 'Namur', 21),
+  (433, 'Ontario', 21),
+  (434, 'Oost-Vlaanderen', 21),
+  (435, 'Provincie Brabant', 21),
+  (436, 'Vlaams-Brabant', 21),
+  (437, 'Wallonne', 21),
+  (438, 'West-Vlaanderen', 21);
+
+--
+-- BOSNIA AND HERZEGOVINA
+--
+INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  (486, 'Federacija Bosna i Hercegovina', 27),
+  (487, 'Republika Srpska', 27);
+
+--
+-- BOUVET ISLAND
+--
+INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  (511, 'Bouvet Island', 29);
+
+--
+-- BULGARIA
+--
+INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  (545, 'Blagoevgrad', 33),
+  (546, 'Burgas', 33),
+  (547, 'Dobrich', 33),
+  (548, 'Gabrovo', 33),
+  (549, 'Haskovo', 33),
+  (550, 'Jambol', 33),
+  (551, 'Kardzhali', 33),
+  (552, 'Kjustendil', 33),
+  (553, 'Lovech', 33),
+  (554, 'Montana', 33),
+  (555, 'Oblast Sofiya-Grad', 33),
+  (556, 'Pazardzhik', 33),
+  (557, 'Pernik', 33),
+  (558, 'Pleven', 33),
+  (559, 'Plovdiv', 33),
+  (560, 'Razgrad', 33),
+  (561, 'Ruse', 33),
+  (562, 'Shumen', 33),
+  (563, 'Silistra', 33),
+  (564, 'Sliven', 33),
+  (565, 'Smoljan', 33),
+  (566, 'Sofija grad', 33),
+  (567, 'Sofijska oblast', 33),
+  (568, 'Stara Zagora', 33),
+  (569, 'Targovishte', 33),
+  (570, 'Varna', 33),
+  (571, 'Veliko Tarnovo', 33),
+  (572, 'Vidin', 33),
+  (573, 'Vraca', 33),
+  (574, 'Yablaniza', 33);

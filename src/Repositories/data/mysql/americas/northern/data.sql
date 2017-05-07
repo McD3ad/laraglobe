@@ -13,3 +13,28 @@ INSERT INTO `countries` (`id`,`region_id`, `code3l`, `code2l`, `name`, `name_off
   /*!40000 ALTER TABLE `countries`
   ENABLE KEYS */;
 UNLOCK TABLES;
+
+--
+-- BERMUDA
+--
+INSERT INTO `states` (`id`, `name`, `country_id`) VALUES
+  (457, 'Hamilton', 24),
+  (458, 'Saint George', 24);
+
+--
+-- CANADA
+--
+INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  (663, 'Alberta', 38),
+  (664, 'British Columbia', 38),
+  (665, 'Manitoba', 38),
+  (666, 'New Brunswick', 38),
+  (667, 'Newfoundland and Labrador', 38),
+  (668, 'Northwest Territories', 38),
+  (669, 'Nova Scotia', 38),
+  (670, 'Nunavut', 38),
+  (671, 'Ontario', 38),
+  (672, 'Prince Edward Island', 38),
+  (673, 'Quebec', 38),
+  (674, 'Saskatchewan', 38),
+  (675, 'Yukon', 38);

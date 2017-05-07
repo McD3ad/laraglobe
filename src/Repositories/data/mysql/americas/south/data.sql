@@ -52,3 +52,107 @@ INSERT INTO `states` (`id`, `name`, `country_id`) VALUES
   (229, 'Santiago del Estero', 95),
   (230, 'Tierra del Fuego', 95),
   (231, 'Tucuman', 95);
+
+--
+-- BOLIVIA
+--
+INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  (477, 'Beni', 26),
+  (478, 'Chuquisaca', 26),
+  (479, 'Cochabamba', 26),
+  (480, 'La Paz', 26),
+  (481, 'Oruro', 26),
+  (482, 'Pando', 26),
+  (483, 'Potosi', 26),
+  (484, 'Santa Cruz', 26),
+  (485, 'Tarija', 26);
+
+--
+-- BRAZIL
+--
+INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  (512, 'Acre', 30),
+  (513, 'Alagoas', 30),
+  (514, 'Amapa', 30),
+  (515, 'Amazonas', 30),
+  (516, 'Bahia', 30),
+  (517, 'Ceara', 30),
+  (518, 'Distrito Federal', 30),
+  (519, 'Espirito Santo', 30),
+  (520, 'Estado de Sao Paulo', 30),
+  (521, 'Goias', 30),
+  (522, 'Maranhao', 30),
+  (523, 'Mato Grosso', 30),
+  (524, 'Mato Grosso do Sul', 30),
+  (525, 'Minas Gerais', 30),
+  (526, 'Para', 30),
+  (527, 'Paraiba', 30),
+  (528, 'Parana', 30),
+  (529, 'Pernambuco', 30),
+  (530, 'Piaui', 30),
+  (531, 'Rio Grande do Norte', 30),
+  (532, 'Rio Grande do Sul', 30),
+  (533, 'Rio de Janeiro', 30),
+  (534, 'Rondonia', 30),
+  (535, 'Roraima', 30),
+  (536, 'Santa Catarina', 30),
+  (537, 'Sao Paulo', 30),
+  (538, 'Sergipe', 30),
+  (539, 'Tocantins', 30);
+
+--
+-- CHILE
+--
+INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  (717, 'Aisen', 43),
+  (718, 'Antofagasta', 43),
+  (719, 'Araucania', 43),
+  (720, 'Atacama', 43),
+  (721, 'Bio Bio', 43),
+  (722, 'Coquimbo', 43),
+  (723, 'Libertador General Bernardo O''', 43),
+  (724, 'Los Lagos', 43),
+  (725, 'Magellanes', 43),
+  (726, 'Maule', 43),
+  (727, 'Metropolitana', 43),
+  (728, 'Metropolitana de Santiago', 43),
+  (729, 'Tarapaca', 43),
+  (730, 'Valparaiso', 43);
+
+--
+-- COLOMBIA
+--
+INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  (775, 'Amazonas', 47),
+  (776, 'Antioquia', 47),
+  (777, 'Arauca', 47),
+  (778, 'Atlantico', 47),
+  (779, 'Bogota', 47),
+  (780, 'Bolivar', 47),
+  (781, 'Boyaca', 47),
+  (782, 'Caldas', 47),
+  (783, 'Caqueta', 47),
+  (784, 'Casanare', 47),
+  (785, 'Cauca', 47),
+  (786, 'Cesar', 47),
+  (787, 'Choco', 47),
+  (788, 'Cordoba', 47),
+  (789, 'Cundinamarca', 47),
+  (790, 'Guainia', 47),
+  (791, 'Guaviare', 47),
+  (792, 'Huila', 47),
+  (793, 'La Guajira', 47),
+  (794, 'Magdalena', 47),
+  (795, 'Meta', 47),
+  (796, 'Narino', 47),
+  (797, 'Norte de Santander', 47),
+  (798, 'Putumayo', 47),
+  (799, 'Quindio', 47),
+  (800, 'Risaralda', 47),
+  (801, 'San Andres y Providencia', 47),
+  (802, 'Santander', 47),
+  (803, 'Sucre', 47),
+  (804, 'Tolima', 47),
+  (805, 'Valle del Cauca', 47),
+  (806, 'Vaupes', 47),
+  (807, 'Vichada', 47);
