@@ -213,3 +213,23 @@ INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
   (1613, 'Ouest', 95),
   (1614, 'Sud', 95),
   (1615, 'Sud-Est', 95);
+
+--
+-- JAMAICA
+--
+INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+(1903, 'Buxoro Viloyati', 74),
+(1904, 'Clarendon', 74),
+(1905, 'Hanover', 74),
+(1906, 'Kingston', 74),
+(1907, 'Manchester', 74),
+(1908, 'Portland', 74),
+(1909, 'Saint Andrews', 74),
+(1910, 'Saint Ann', 74),
+(1911, 'Saint Catherine', 74),
+(1912, 'Saint Elizabeth', 74),
+(1913, 'Saint James', 74),
+(1914, 'Saint Mary', 74),
+(1915, 'Saint Thomas', 74),
+(1916, 'Trelawney', 74),
+(1917, 'Westmoreland', 74);
