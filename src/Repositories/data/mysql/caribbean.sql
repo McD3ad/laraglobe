@@ -4,7 +4,8 @@
 LOCK TABLES `countries` WRITE;
 /*!40000 ALTER TABLE `countries`
   DISABLE KEYS */;
-INSERT INTO `countries` (`id`,`region_id`, `code3l`, `code2l`, `name`, `name_official`, `flag_small`, `flag_large`, `latitude`, `longitude`, `zoom`) VALUES
+INSERT INTO `countries` (`id`, `region_id`, `code3l`, `code2l`, `name`, `name_official`, `flag_small`, `flag_large`, `latitude`, `longitude`, `zoom`)
+VALUES
   (59, 9, 'AIA', 'AI', 'Anguilla', 'Anguilla', 'AI-32.png', 'AI-128.png', 18.22053521, -63.06861300, 12),
   (60, 9, 'ATG', 'AG', 'Antigua and Barbuda', 'Antigua and Barbuda', 'AG-32.png', 'AG-128.png', 17.48060423, -61.42014426, 9),
   (61, 9, 'ABW', 'AW', 'Aruba', 'Aruba of the Kingdom of the Netherlands', 'AW-32.png', 'AW-128.png', 12.52109661, -69.96833800, 12),
@@ -28,43 +29,44 @@ INSERT INTO `countries` (`id`,`region_id`, `code3l`, `code2l`, `name`, `name_off
   (79, 9, 'KNA', 'KN', 'Saint Kitts and Nevis', 'Saint Kitts and Nevis', 'KN-32.png', 'KN-128.png', 17.33453669, -62.76411725, 12),
   (80, 9, 'LCA', 'LC', 'Saint Lucia', 'Saint Lucia', 'LC-32.png', 'LC-128.png', 13.90938495, -60.97889500, 11),
   (81, 9, 'MAF', 'MF', 'Saint Martin', 'Saint Martin', 'MF-32.png', 'MF-128.png', 18.07637107, -63.05019106, 12),
-  (82, 9, 'VCT', 'VC', 'Saint Vincent and the Grenadines', 'Saint Vincent and the Grenadines', 'VC-32.png', 'VC-128.png', 13.25276143, -61.19709800, 11),
+  (82, 9, 'VCT', 'VC', 'Saint Vincent and the Grenadines', 'Saint Vincent and the Grenadines', 'VC-32.png',
+       'VC-128.png', 13.25276143, -61.19709800, 11),
   (83, 9, 'SXM', 'SX', 'Sint Maarten', 'Sint Maarten', 'SX-32.png', 'SX-128.png', 18.04433885, -63.05616320, 12),
-  (84, 9, 'TTO', 'TT', 'Trinidad and Tobago', 'the Republic of Trinidad and Tobago', 'TT-32.png', 'TT-128.png', 10.43241863, -61.22250300, 10),
-  (85, 9, 'TCA', 'TC', 'Turks and Caicos Islands', 'Turks and Caicos Islands', 'TC-32.png', 'TC-128.png', 21.72816866, -71.79654471, 9),
-  (86, 9, 'VIR', 'VI', 'United States Virgin Islands', 'Virgin Islands of the United States', 'VI-32.png', 'VI-128.png', 18.01000938, -64.77411410, 9);
-  /*!40000 ALTER TABLE `countries`
+  (84, 9, 'TTO', 'TT', 'Trinidad and Tobago', 'the Republic of Trinidad and Tobago', 'TT-32.png', 'TT-128.png',
+       10.43241863, -61.22250300, 10),
+  (85, 9, 'TCA', 'TC', 'Turks and Caicos Islands', 'Turks and Caicos Islands', 'TC-32.png', 'TC-128.png', 21.72816866,
+       -71.79654471, 9),
+  (86, 9, 'VIR', 'VI', 'United States Virgin Islands', 'Virgin Islands of the United States', 'VI-32.png', 'VI-128.png',
+       18.01000938, -64.77411410, 9);
+/*!40000 ALTER TABLE `countries`
   ENABLE KEYS */;
 UNLOCK TABLES;
 
---
--- ANGUILLA
---
 INSERT INTO `states` (`id`, `name`, `country_id`) VALUES
-  (193, 'Other Provinces', 59);
+  --
+  -- ANGUILLA
+  --
+  (193, 'Other Provinces', 59),
 
---
--- ANTIGUA AND BARBUDA
---
-INSERT INTO `states` (`id`, `name`, `country_id`) VALUES
+  --
+  -- ANTIGUA AND BARBUDA
+  --
   (201, 'Barbuda', 60),
   (202, 'Saint George', 60),
   (203, 'Saint John', 60),
   (204, 'Saint Mary', 60),
   (205, 'Saint Paul', 60),
   (206, 'Saint Peter', 60),
-  (207, 'Saint Philip', 60);
+  (207, 'Saint Philip', 60),
 
---
--- ARUBA
---
-INSERT INTO `states` (`id`, `name`, `country_id`) VALUES
-  (244, 'Aruba', 61);
+  --
+  -- ARUBA
+  --
+  (244, 'Aruba', 61),
 
---
--- BAHAMAS
---
-INSERT INTO `states` (`id`, `name`, `country_id`) VALUES
+  --
+  -- BAHAMAS
+  --
   (310, 'Abaco', 62),
   (311, 'Acklins Island', 62),
   (312, 'Andros', 62),
@@ -81,12 +83,11 @@ INSERT INTO `states` (`id`, `name`, `country_id`) VALUES
   (323, 'New Providence', 62),
   (324, 'Ragged Island', 62),
   (325, 'Rum Cay', 62),
-  (326, 'San Salvador', 62);
+  (326, 'San Salvador', 62),
 
---
--- BARBADOS
---
-INSERT INTO `states` (`id`, `name`, `country_id`) VALUES
+  --
+  -- BARBADOS
+  --
   (402, 'Christ Church', 63),
   (403, 'Saint Andrew', 63),
   (404, 'Saint George', 63),
@@ -97,18 +98,16 @@ INSERT INTO `states` (`id`, `name`, `country_id`) VALUES
   (409, 'Saint Michael', 63),
   (410, 'Saint Peter', 63),
   (411, 'Saint Philip', 63),
-  (412, 'Saint Thomas', 63);
+  (412, 'Saint Thomas', 63),
 
---
--- CAYMAN ISLANDS
---
-INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
-  (685, 'Grand Cayman', 40);
+  --
+  -- CAYMAN ISLANDS
+  --
+  (685, 'Grand Cayman', 40),
 
---
--- CUBA
---
-INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  --
+  -- CUBA
+  --
   (893, 'Camaguey', 55),
   (894, 'Ciego de Avila', 55),
   (895, 'Cienfuegos', 55),
@@ -124,27 +123,25 @@ INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
   (905, 'Pinar del Rio', 55),
   (906, 'Sancti Spiritus', 55),
   (907, 'Santiago de Cuba', 55),
-  (908, 'Villa Clara', 55);
+  (908, 'Villa Clara', 55),
 
---
--- DOMINICA
---
-INSERT INTO `states` (`id`, `name`, `country_id`) VALUE\
-(969, 'Saint Andrew', 60),
-(970, 'Saint David', 60),
-(971, 'Saint George', 60),
-(972, 'Saint John', 60),
-(973, 'Saint Joseph', 60),
-(974, 'Saint Luke', 60),
-(975, 'Saint Mark', 60),
-(976, 'Saint Patrick', 60),
-(977, 'Saint Paul', 60),
-(978, 'Saint Peter', 60);
+  --
+  -- DOMINICA
+  --
+  (969, 'Saint Andrew', 60),
+  (970, 'Saint David', 60),
+  (971, 'Saint George', 60),
+  (972, 'Saint John', 60),
+  (973, 'Saint Joseph', 60),
+  (974, 'Saint Luke', 60),
+  (975, 'Saint Mark', 60),
+  (976, 'Saint Patrick', 60),
+  (977, 'Saint Paul', 60),
+  (978, 'Saint Peter', 60),
 
---
--- DOMINICAN REPUBLIC
---
-INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  --
+  -- DOMINICAN REPUBLIC
+  --
   (979, 'Azua', 61),
   (980, 'Bahoruco', 61),
   (981, 'Barahona', 61),
@@ -174,36 +171,33 @@ INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
   (1005, 'Sanchez Ramirez', 61),
   (1006, 'Santiago', 61),
   (1007, 'Santiago Rodriguez', 61),
-  (1008, 'Valverde', 61);
+  (1008, 'Valverde', 61),
 
---
--- GRENADA
---
-INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  --
+  -- GRENADA
+  --
   (1493, 'Carriacou-Petite Martinique', 87),
   (1494, 'Saint Andrew', 87),
   (1495, 'Saint Davids', 87),
   (1496, 'Saint George''s', 87),
   (1497, 'Saint John', 87),
   (1498, 'Saint Mark', 87),
-  (1499, 'Saint Patrick', 87);
+  (1499, 'Saint Patrick', 87),
 
---
--- GUADELOUPE
---
-INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  --
+  -- GUADELOUPE
+  --
   (1500, 'Basse-Terre', 88),
   (1501, 'Grande-Terre', 88),
   (1502, 'Iles des Saintes', 88),
   (1503, 'La Desirade', 88),
   (1504, 'Marie-Galante', 88),
   (1505, 'Saint Barthelemy', 88),
-  (1506, 'Saint Martin', 88);
+  (1506, 'Saint Martin', 88),
 
---
--- HAITI
---
-INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  --
+  -- HAITI
+  --
   (1607, 'Artibonite', 95),
   (1608, 'Centre', 95),
   (1609, 'Grand''Anse', 95),
@@ -212,24 +206,36 @@ INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
   (1612, 'Nord-Ouest', 95),
   (1613, 'Ouest', 95),
   (1614, 'Sud', 95),
-  (1615, 'Sud-Est', 95);
+  (1615, 'Sud-Est', 95),
 
---
--- JAMAICA
---
-INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
-(1903, 'Buxoro Viloyati', 74),
-(1904, 'Clarendon', 74),
-(1905, 'Hanover', 74),
-(1906, 'Kingston', 74),
-(1907, 'Manchester', 74),
-(1908, 'Portland', 74),
-(1909, 'Saint Andrews', 74),
-(1910, 'Saint Ann', 74),
-(1911, 'Saint Catherine', 74),
-(1912, 'Saint Elizabeth', 74),
-(1913, 'Saint James', 74),
-(1914, 'Saint Mary', 74),
-(1915, 'Saint Thomas', 74),
-(1916, 'Trelawney', 74),
-(1917, 'Westmoreland', 74);
+  --
+  -- JAMAICA
+  --
+  (1903, 'Buxoro Viloyati', 74),
+  (1904, 'Clarendon', 74),
+  (1905, 'Hanover', 74),
+  (1906, 'Kingston', 74),
+  (1907, 'Manchester', 74),
+  (1908, 'Portland', 74),
+  (1909, 'Saint Andrews', 74),
+  (1910, 'Saint Ann', 74),
+  (1911, 'Saint Catherine', 74),
+  (1912, 'Saint Elizabeth', 74),
+  (1913, 'Saint James', 74),
+  (1914, 'Saint Mary', 74),
+  (1915, 'Saint Thomas', 74),
+  (1916, 'Trelawney', 74),
+  (1917, 'Westmoreland', 74),
+
+  --
+  -- MARTINIQUE
+  --
+  (2395, 'Fort-de-France', 138),
+  (2396, 'La Trinite', 138),
+  (2397, 'Le Marin', 138),
+  (2398, 'Saint-Pierre', 138),
+
+  --
+  -- MONTSERRAT
+  --
+  (2503, 'Montserrat', 147),

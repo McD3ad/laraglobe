@@ -4,14 +4,16 @@
 LOCK TABLES `countries` WRITE;
 /*!40000 ALTER TABLE `countries`
   DISABLE KEYS */;
-INSERT INTO `countries` (`id`,`region_id`, `code3l`, `code2l`, `name`, `name_official`, `flag_small`, `flag_large`, `latitude`, `longitude`, `zoom`) VALUES
-  (1, 1, 'DZA', 'DZ', 'Algeria', 'the People\'s Democratic Republic of Algeria', 'DZ-32.png', 'DZ-128.png', 27.89861690, 3.19771194, 5),
+INSERT INTO `countries` (`id`, `region_id`, `code3l`, `code2l`, `name`, `name_official`, `flag_small`, `flag_large`, `latitude`, `longitude`, `zoom`)
+VALUES
+  (1, 1, 'DZA', 'DZ', 'Algeria', 'the People\'s Democratic Republic of Algeria', 'DZ-32.png', 'DZ-128.png', 27.89861690,
+      3.19771194, 5),
   (2, 1, 'AGO', 'AO', 'Angola', 'the Republic of Angola', 'AO-32.png', 'AO-128.png', -12.16469683, 16.70933622, 6),
   (3, 1, 'BEN', 'BJ', 'Benin', 'the Republic of Benin', 'BJ-32.png', 'BJ-128.png', 9.37180859, 2.29386134, 7),
   (4, 1, 'BWA', 'BW', 'Botswana', 'the Republic of Botswana', 'BW-32.png', 'BW-128.png', -22.18279485, 24.22344422, 6),
   (5, 1, 'BFA', 'BF', 'Burkina Faso', 'Burkina Faso', 'BF-32.png', 'BF-128.png', 12.22492458, -1.56159100, 7),
   (6, 1, 'BDI', 'BI', 'Burundi', 'the Republic of Burundi', 'BI-32.png', 'BI-128.png', -3.40499707, 29.88592902, 8),
-  (7, 1, 'CPV', 'CV', 'Cabo Verde', 'Republic of Cabo Verde', 'CV-32.png', 'CV-128.png', 15.11988711, -23.60517010, 10),
+  (7, 1, 'CPV', 'CV', 'Capo Verde', 'Republic of Capo Verde', 'CV-32.png', 'CV-128.png', 15.11988711, -23.60517010, 10),
   (8, 1, 'CMR', 'CM', 'Cameroon', 'the Republic of Cameroon', 'CM-32.png', 'CM-128.png', 7.38622543, 12.72825915, 6),
   (9, 1, 'CAF', 'CF', 'Central African Republic', 'the Central African Republic', 'CF-32.png', 'CF-128.png', 6.82541830, 20.64281514, 6),
   (10, 1, 'TCD', 'TD', 'Chad', 'the Republic of Chad', 'TD-32.png', 'TD-128.png', 14.80342407, 18.78714064, 5),
@@ -56,21 +58,22 @@ INSERT INTO `countries` (`id`,`region_id`, `code3l`, `code2l`, `name`, `name_off
   (49, 1, 'SSD', 'SS', 'South Sudan', 'the Republic of South Sudan', 'SS-32.png', 'SS-128.png', 7.91320803, 30.15342434, 6),
   (50, 1, 'SDN', 'SD', 'Sudan', 'the Republic of the Sudan', 'SD-32.png', 'SD-128.png', 15.96646839, 30.37145459, 5),
   (51, 1, 'SWZ', 'SZ', 'Swaziland', 'the Kingdom of Swaziland', 'SZ-32.png', 'SZ-128.png', -26.53892570, 31.47960891, 9),
-  (52, 1, 'TZA', 'TZ', 'Tanzania', 'the United Republic of Tanzania', 'TZ-32.png', 'TZ-128.png', -6.37551085, 34.85587302, 6),
+  (52, 1, 'TZA', 'TZ', 'Tanzania', 'the United Republic of Tanzania', 'TZ-32.png', 'TZ-128.png', -6.37551085,
+       34.85587302, 6),
   (53, 1, 'TGO', 'TG', 'Togo', 'the Togolese Republic', 'TG-32.png', 'TG-128.png', 8.68089206, 0.86049757, 7),
   (54, 1, 'TUN', 'TN', 'Tunisia', 'the Republic of Tunisia', 'TN-32.png', 'TN-128.png', 33.88431940, 9.71878341, 6),
   (55, 1, 'UGA', 'UG', 'Uganda', 'the Republic of Uganda', 'UG-32.png', 'UG-128.png', 1.54760620, 32.44409759, 7),
   (56, 1, 'ESH', 'EH', 'Western Sahara', 'Western Sahara', 'EH-32.png', 'EH-128.png', 24.79324356, -13.67683563, 6),
   (57, 1, 'ZMB', 'ZM', 'Zambia', 'the Republic of Zambia', 'ZM-32.png', 'ZM-128.png', -13.01812188, 28.33274444, 6),
   (58, 1, 'ZWE', 'ZW', 'Zimbabwe', 'the Republic of Zimbabwe', 'ZW-32.png', 'ZW-128.png', -19.00784952, 30.18758584, 6);
-  /*!40000 ALTER TABLE `countries`
+/*!40000 ALTER TABLE `countries`
   ENABLE KEYS */;
 UNLOCK TABLES;
 
---
--- ALGERIA
---
 INSERT INTO `states` (`id`, `name`, `country_id`) VALUES
+  --
+  -- ALGERIA
+  --
   (110, '''Ayn Daflah', 1),
   (111, '''Ayn Tamushanat', 1),
   (112, 'Adrar', 1),
@@ -124,12 +127,11 @@ INSERT INTO `states` (`id`, `name`, `country_id`) VALUES
   (160, 'al-Jaza''ir', 1),
   (161, 'al-Wad', 1),
   (162, 'ash-Shalif', 1),
-  (163, 'at-Tarif', 1);
+  (163, 'at-Tarif', 1),
 
---
--- ANGOLA
---
-INSERT INTO `states` (`id`, `name`, `country_id`) VALUES
+  --
+  -- ANGOLA
+  --
   (175, 'Bengo', 2),
   (176, 'Benguela', 2),
   (177, 'Bie', 2),
@@ -147,29 +149,27 @@ INSERT INTO `states` (`id`, `name`, `country_id`) VALUES
   (189, 'Moxico', 2),
   (190, 'Namibe', 2),
   (191, 'Uige', 2),
-  (192, 'Zaire', 2);
+  (192, 'Zaire', 2),
 
---
--- BENIN
---
-INSERT INTO `states` (`id`, `name`, `country_id`) VALUES
-  (445, 'Alibori', 23),
-  (446, 'Atacora', 23),
-  (447, 'Atlantique', 23),
-  (448, 'Borgou', 23),
-  (449, 'Collines', 23),
-  (450, 'Couffo', 23),
-  (451, 'Donga', 23),
-  (452, 'Littoral', 23),
-  (453, 'Mono', 23),
-  (454, 'Oueme', 23),
-  (455, 'Plateau', 23),
-  (456, 'Zou', 23);
+  --
+  -- BENIN
+  --
+  (445, 'Alibori', 3),
+  (446, 'Atacora', 3),
+  (447, 'Atlantique', 3),
+  (448, 'Borgou', 3),
+  (449, 'Collines', 3),
+  (450, 'Couffo', 3),
+  (451, 'Donga', 3),
+  (452, 'Littoral', 3),
+  (453, 'Mono', 3),
+  (454, 'Oueme', 3),
+  (455, 'Plateau', 3),
+  (456, 'Zou', 3),
 
---
--- BOTSWANA
---
-INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  --
+  -- BOTSWANA
+  --
   (488, 'Central Bobonong', 28),
   (489, 'Central Boteti', 28),
   (490, 'Central Mahalapye', 28),
@@ -192,12 +192,11 @@ INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
   (507, 'Orapa', 28),
   (508, 'Selibe Phikwe', 28),
   (509, 'South East', 28),
-  (510, 'Sowa', 28);
+  (510, 'Sowa', 28),
 
---
--- BURKINA FASO
---
-INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  --
+  -- BURKINA FASO
+  --
   (575, 'Bale', 34),
   (576, 'Bam', 34),
   (577, 'Bazega', 34),
@@ -236,12 +235,11 @@ INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
   (610, 'Tuy', 34),
   (611, 'Yatenga', 34),
   (612, 'Zondoma', 34),
-  (613, 'Zoundweogo', 34);
+  (613, 'Zoundweogo', 34),
 
---
--- BURUNDI
---
-INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  --
+  -- BURUNDI
+  --
   (614, 'Bubanza', 35),
   (615, 'Bujumbura', 35),
   (616, 'Bururi', 35),
@@ -256,12 +254,11 @@ INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
   (625, 'Muyinga', 35),
   (626, 'Ngozi', 35),
   (627, 'Rutana', 35),
-  (628, 'Ruyigi', 35);
+  (628, 'Ruyigi', 35),
 
---
--- CAMEROON
---
-INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  --
+  -- CAMEROON
+  --
   (653, 'Adamaoua', 37),
   (654, 'Centre', 37),
   (655, 'Est', 37),
@@ -271,12 +268,11 @@ INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
   (659, 'Nordouest', 37),
   (660, 'Ouest', 37),
   (661, 'Sud', 37),
-  (662, 'Sudouest', 37);
+  (662, 'Sudouest', 37),
 
---
--- CABO VERDE
---
-INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  --
+  -- CAPO VERDE
+  --
   (676, 'Boavista', 39),
   (677, 'Brava', 39),
   (678, 'Fogo', 39),
@@ -285,12 +281,11 @@ INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
   (681, 'Santo Antao', 39),
   (682, 'Sao Nicolau', 39),
   (683, 'Sao Tiago', 39),
-  (684, 'Sao Vicente', 39);
+  (684, 'Sao Vicente', 39),
 
---
--- CENTRAL AFRICAN REPUBLIC
---
-INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  --
+  -- CENTRAL AFRICAN REPUBLIC
+  --
   (686, 'Bamingui-Bangoran', 41),
   (687, 'Bangui', 41),
   (688, 'Basse-Kotto', 41),
@@ -307,12 +302,11 @@ INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
   (699, 'Ouham', 41),
   (700, 'Ouham-Pende', 41),
   (701, 'Sangha-Mbaere', 41),
-  (702, 'Vakaga', 41);
+  (702, 'Vakaga', 41),
 
---
--- CHAD
---
-INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  --
+  -- CHAD
+  --
   (703, 'Batha', 42),
   (704, 'Biltine', 42),
   (705, 'Bourkou-Ennedi-Tibesti', 42),
@@ -326,35 +320,32 @@ INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
   (713, 'Moyen-Chari', 42),
   (714, 'Ouaddai', 42),
   (715, 'Salamat', 42),
-  (716, 'Tandjile', 42);
+  (716, 'Tandjile', 42),
 
---
--- COMOROS
---
-INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  --
+  -- COMOROS
+  --
   (808, 'Mwali', 48),
   (809, 'Njazidja', 48),
-  (810, 'Nzwani', 48);
+  (810, 'Nzwani', 48),
 
---
--- CONGO
---
-INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
-(811, 'Bouenza', 49),
-(812, 'Brazzaville', 49),
-(813, 'Cuvette', 49),
-(814, 'Kouilou', 49),
-(815, 'Lekoumou', 49),
-(816, 'Likouala', 49),
-(817, 'Niari', 49),
-(818, 'Plateaux', 49),
-(819, 'Pool', 49),
-(820, 'Sangha', 49);
+  --
+  -- CONGO
+  --
+  (811, 'Bouenza', 49),
+  (812, 'Brazzaville', 49),
+  (813, 'Cuvette', 49),
+  (814, 'Kouilou', 49),
+  (815, 'Lekoumou', 49),
+  (816, 'Likouala', 49),
+  (817, 'Niari', 49),
+  (818, 'Plateaux', 49),
+  (819, 'Pool', 49),
+  (820, 'Sangha', 49),
 
---
--- COTE D'IVOIRE
---
-INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  --
+  -- COTE D'IVOIRE
+  --
   (850, 'Abidjan', 53),
   (851, 'Agneby', 53),
   (852, 'Bafing', 53),
@@ -374,12 +365,11 @@ INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
   (866, 'Sud-Comoe', 53),
   (867, 'Vallee du Bandama', 53),
   (868, 'Worodougou', 53),
-  (869, 'Zanzan', 53);
+  (869, 'Zanzan', 53),
 
---
--- DEMOCRATIC REPUBLIC OF CONGO
---
-INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  --
+  -- DEMOCRATIC REPUBLIC OF CONGO
+  --
   (821, 'Bandundu', 50),
   (822, 'Bas-Congo', 50),
   (823, 'Equateur', 50),
@@ -390,22 +380,20 @@ INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
   (828, 'Kinshasa', 50),
   (829, 'Maniema', 50),
   (830, 'Nord-Kivu', 50),
-  (831, 'Sud-Kivu', 50);
+  (831, 'Sud-Kivu', 50),
 
---
--- DJIBOUTI
---
-INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  --
+  -- DJIBOUTI
+  --
   (964, '''Ali Sabih', 59),
   (965, 'Dikhil', 59),
   (966, 'Jibuti', 59),
   (967, 'Tajurah', 59),
-  (968, 'Ubuk', 59);
+  (968, 'Ubuk', 59),
 
---
--- EGYPT
---
-INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  --
+  -- EGYPT
+  --
   (1044, 'Aswan', 64),
   (1045, 'Asyut', 64),
   (1046, 'Bani Suwayf', 64),
@@ -438,35 +426,32 @@ INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
   (1073, 'al-Uqsur', 64),
   (1074, 'al-Wadi al-Jadid', 64),
   (1075, 'as-Suways', 64),
-  (1076, 'ash-Sharqiyah', 64);
+  (1076, 'ash-Sharqiyah', 64),
 
---
--- EQUATORIAL GUINEA
---
-INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  --
+  -- EQUATORIAL GUINEA
+  --
   (1091, 'Annobon', 66),
   (1092, 'Bioko Norte', 66),
   (1093, 'Bioko Sur', 66),
   (1094, 'Centro Sur', 66),
   (1095, 'Kie-Ntem', 66),
   (1096, 'Litoral', 66),
-  (1097, 'Wele-Nzas', 66);
+  (1097, 'Wele-Nzas', 66),
 
---
--- ERITREA
---
-INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  --
+  -- ERITREA
+  --
   (1098, 'Anseba', 67),
   (1099, 'Debub', 67),
   (1100, 'Debub-Keih-Bahri', 67),
   (1101, 'Gash-Barka', 67),
   (1102, 'Maekel', 67),
-  (1103, 'Semien-Keih-Bahri', 67);
+  (1103, 'Semien-Keih-Bahri', 67),
 
---
--- ETHIOPIA
---
-INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  --
+  -- ETHIOPIA
+  --
   (1119, 'Addis Abeba', 69),
   (1120, 'Afar', 69),
   (1121, 'Amhara', 69),
@@ -479,12 +464,11 @@ INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
   (1128, 'Oromia', 69),
   (1129, 'Somali', 69),
   (1130, 'Southern', 69),
-  (1131, 'Tigray', 69);
+  (1131, 'Tigray', 69),
 
---
--- GABON
---
-INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  --
+  -- GABON
+  --
   (1325, 'Estuaire', 79),
   (1326, 'Haut-Ogooue', 79),
   (1327, 'Moyen-Ogooue', 79),
@@ -493,12 +477,11 @@ INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
   (1330, 'Ogooue-Ivindo', 79),
   (1331, 'Ogooue-Lolo', 79),
   (1332, 'Ogooue-Maritime', 79),
-  (1333, 'Woleu-Ntem', 79);
+  (1333, 'Woleu-Ntem', 79),
 
---
--- GAMBIA
---
-INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  --
+  -- GAMBIA
+  --
   (1334, 'Banjul', 80),
   (1335, 'Basse', 80),
   (1336, 'Brikama', 80),
@@ -506,12 +489,11 @@ INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
   (1338, 'Kanifing', 80),
   (1339, 'Kerewan', 80),
   (1340, 'Kuntaur', 80),
-  (1341, 'Mansakonko', 80);
+  (1341, 'Mansakonko', 80),
 
---
--- GHANA
---
-INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  --
+  -- GHANA
+  --
   (1401, 'Ashanti', 83),
   (1402, 'Brong-Ahafo', 83),
   (1403, 'Central', 83),
@@ -521,12 +503,11 @@ INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
   (1407, 'Upper East', 83),
   (1408, 'Upper West', 83),
   (1409, 'Volta', 83),
-  (1410, 'Western', 83);
+  (1410, 'Western', 83),
 
---
--- GUINEA
---
-INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  --
+  -- GUINEA
+  --
   (1557, 'Beyla', 92),
   (1558, 'Boffa', 92),
   (1559, 'Boke', 92),
@@ -558,12 +539,11 @@ INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
   (1585, 'Siguiri', 92),
   (1586, 'Telimele', 92),
   (1587, 'Tougue', 92),
-  (1588, 'Yomou', 92);
+  (1588, 'Yomou', 92),
 
---
--- GUINEA BISSAU
---
-INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  --
+  -- GUINEA BISSAU
+  --
   (1589, 'Bafata', 93),
   (1590, 'Bissau', 93),
   (1591, 'Bolama', 93),
@@ -571,4 +551,211 @@ INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
   (1593, 'Gabu', 93),
   (1594, 'Oio', 93),
   (1595, 'Quinara', 93),
-  (1596, 'Tombali', 93);
+  (1596, 'Tombali', 93),
+
+  --
+  -- KENYA
+  --
+  (2004, 'Central', 25),
+  (2005, 'Coast', 25),
+  (2006, 'Eastern', 25),
+  (2007, 'Nairobi', 25),
+  (2008, 'North Eastern', 25),
+  (2009, 'Nyanza', 25),
+  (2010, 'Rift Valley', 25),
+  (2011, 'Western', 25),
+
+  --
+  -- LESOTHO
+  --
+  (2159, 'Berea', 122),
+  (2160, 'Butha-Buthe', 122),
+  (2161, 'Leribe', 122),
+  (2162, 'Mafeteng', 122),
+  (2163, 'Maseru', 122),
+  (2164, 'Mohale''s Hoek', 122),
+  (2165, 'Mokhotlong', 122),
+  (2166, 'Qacha''s Nek', 122),
+  (2167, 'Quthing', 122),
+  (2168, 'Thaba-Tseka', 122),
+
+  --
+  -- LIBERIA
+  --
+  (2169, 'Bomi', 123),
+  (2170, 'Bong', 123),
+  (2171, 'Grand Bassa', 123),
+  (2172, 'Grand Cape Mount', 123),
+  (2173, 'Grand Gedeh', 123),
+  (2174, 'Loffa', 123),
+  (2175, 'Margibi', 123),
+  (2176, 'Maryland and Grand Kru', 123),
+  (2177, 'Montserrado', 123),
+  (2178, 'Nimba', 123),
+  (2179, 'Rivercess', 123),
+  (2180, 'Sinoe', 123),
+
+  --
+  -- LIBYA
+  --
+  (2181, 'Ajdabiya', 124),
+  (2182, 'Fezzan', 124),
+  (2183, 'Banghazi', 124),
+  (2184, 'Darnah', 124),
+  (2185, 'Ghadamis', 124),
+  (2186, 'Gharyan', 124),
+  (2187, 'Misratah', 124),
+  (2188, 'Murzuq', 124),
+  (2189, 'Sabha', 124),
+  (2190, 'Sawfajjin', 124),
+  (2191, 'Surt', 124),
+  (2192, 'Tarabulus', 124),
+  (2193, 'Tarhunah', 124),
+  (2194, 'Tripolitania', 124),
+  (2195, 'Tubruq', 124),
+  (2196, 'Yafran', 124),
+  (2197, 'Zlitan', 124),
+  (2198, 'al-''Aziziyah', 124),
+  (2199, 'al-Fatih', 124),
+  (2200, 'al-Jabal al Akhdar', 124),
+  (2201, 'al-Jufrah', 124),
+  (2202, 'al-Khums', 124),
+  (2203, 'al-Kufrah', 124),
+  (2204, 'an-Nuqat al-Khams', 124),
+  (2205, 'ash-Shati''', 124),
+  (2206, 'az-Zawiyah', 124),
+
+  --
+  -- MADAGASCAR
+  --
+  (2274, 'Antananarivo', 130),
+  (2275, 'Antsiranana', 130),
+  (2276, 'Fianarantsoa', 130),
+  (2277, 'Mahajanga', 130),
+  (2278, 'Toamasina', 130),
+  (2279, 'Toliary', 130),
+
+  --
+  -- MALAWI
+  --
+  (2280, 'Balaka', 131),
+  (2281, 'Blantyre City', 131),
+  (2282, 'Chikwawa', 131),
+  (2283, 'Chiradzulu', 131),
+  (2284, 'Chitipa', 131),
+  (2285, 'Dedza', 131),
+  (2286, 'Dowa', 131),
+  (2287, 'Karonga', 131),
+  (2288, 'Kasungu', 131),
+  (2289, 'Lilongwe City', 131),
+  (2290, 'Machinga', 131),
+  (2291, 'Mangochi', 131),
+  (2292, 'Mchinji', 131),
+  (2293, 'Mulanje', 131),
+  (2294, 'Mwanza', 131),
+  (2295, 'Mzimba', 131),
+  (2296, 'Mzuzu City', 131),
+  (2297, 'Nkhata Bay', 131),
+  (2298, 'Nkhotakota', 131),
+  (2299, 'Nsanje', 131),
+  (2300, 'Ntcheu', 131),
+  (2301, 'Ntchisi', 131),
+  (2302, 'Phalombe', 131),
+  (2303, 'Rumphi', 131),
+  (2304, 'Salima', 131),
+  (2305, 'Thyolo', 131),
+  (2306, 'Zomba Municipality', 131),
+
+  --
+  -- MALI
+  --
+  (2346, 'Bamako', 134),
+  (2347, 'Gao', 134),
+  (2348, 'Kayes', 134),
+  (2349, 'Kidal', 134),
+  (2350, 'Koulikoro', 134),
+  (2351, 'Mopti', 134),
+  (2352, 'Segou', 134),
+  (2353, 'Sikasso', 134),
+  (2354, 'Tombouctou', 134),
+
+  --
+  -- MAURITANIA
+  --
+  (2399, 'Adrar', 139),
+  (2400, 'Assaba', 139),
+  (2401, 'Brakna', 139),
+  (2402, 'Dhakhlat Nawadibu', 139),
+  (2403, 'Hudh-al-Gharbi', 139),
+  (2404, 'Hudh-ash-Sharqi', 139),
+  (2405, 'Inshiri', 139),
+  (2406, 'Nawakshut', 139),
+  (2407, 'Qidimagha', 139),
+  (2408, 'Qurqul', 139),
+  (2409, 'Taqant', 139),
+  (2410, 'Tiris Zammur', 139),
+  (2411, 'Trarza', 139),
+
+  --
+  -- MAURITIUS
+  --
+  (2412, 'Black River', 140),
+  (2413, 'Eau Coulee', 140),
+  (2414, 'Flacq', 140),
+  (2415, 'Floreal', 140),
+  (2416, 'Grand Port', 140),
+  (2417, 'Moka', 140),
+  (2418, 'Pamplempousses', 140),
+  (2419, 'Plaines Wilhelm', 140),
+  (2420, 'Port Louis', 140),
+  (2421, 'Riviere du Rempart', 140),
+  (2422, 'Rodrigues', 140),
+  (2423, 'Rose Hill', 140),
+  (2424, 'Savanne', 140),
+
+  --
+  -- MAYOTTE
+  --
+  (2425, 'Mayotte', 141),
+  (2426, 'Pamanzi', 141),
+
+  --
+  -- MOROCCO
+  --
+  (2504, 'Agadir', 148),
+  (2505, 'Casablanca', 148),
+  (2506, 'Chaouia-Ouardigha', 148),
+  (2507, 'Doukkala-Abda', 148),
+  (2508, 'Fes-Boulemane', 148),
+  (2509, 'Gharb-Chrarda-Beni Hssen', 148),
+  (2510, 'Guelmim', 148),
+  (2511, 'Kenitra', 148),
+  (2512, 'Marrakech-Tensift-Al Haouz', 148),
+  (2513, 'Meknes-Tafilalet', 148),
+  (2514, 'Oriental', 148),
+  (2515, 'Oujda', 148),
+  (2516, 'Province de Tanger', 148),
+  (2517, 'Rabat-Sale-Zammour-Zaer', 148),
+  (2518, 'Sala Al Jadida', 148),
+  (2519, 'Settat', 148),
+  (2520, 'Souss Massa-Draa', 148),
+  (2521, 'Tadla-Azilal', 148),
+  (2522, 'Tangier-Tetouan', 148),
+  (2523, 'Taza-Al Hoceima-Taounate', 148),
+  (2524, 'Wilaya de Casablanca', 148),
+  (2525, 'Wilaya de Rabat-Sale', 148),
+
+  --
+  -- MOZAMBIQUE
+  --
+  (2526, 'Cabo Delgado', 149),
+  (2527, 'Gaza', 149),
+  (2528, 'Inhambane', 149),
+  (2529, 'Manica', 149),
+  (2530, 'Maputo', 149),
+  (2531, 'Maputo Provincia', 149),
+  (2532, 'Nampula', 149),
+  (2533, 'Niassa', 149),
+  (2534, 'Sofala', 149),
+  (2535, 'Tete', 149),
+  (2536, 'Zambezia', 149),
