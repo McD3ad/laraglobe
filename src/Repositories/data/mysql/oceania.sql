@@ -4,8 +4,10 @@
 LOCK TABLES `countries` WRITE;
 /*!40000 ALTER TABLE `countries`
   DISABLE KEYS */;
-INSERT INTO `countries` (`id`,`region_id`, `code3l`, `code2l`, `name`, `name_official`, `flag_small`, `flag_large`, `latitude`, `longitude`, `zoom`) VALUES
-  (164, 7, 'ASM', 'AS', 'American Samoa', 'The United States Territory of American Samoa', 'AS-32.png', 'AS-128.png', -14.30634641, -170.69501750, 11),
+INSERT INTO `countries` (`id`, `region_id`, `code3l`, `code2l`, `name`, `name_official`, `flag_small`, `flag_large`, `latitude`, `longitude`, `zoom`)
+VALUES
+  (164, 7, 'ASM', 'AS', 'American Samoa', 'The United States Territory of American Samoa', 'AS-32.png', 'AS-128.png',
+        -14.30634641, -170.69501750, 11),
   (165, 7, 'ATA', 'AQ', 'Antarctica', 'Antarctica', 'AQ-32.png', 'AQ-128.png', -45.13806295, 10.48095703, 2),
   (166, 7, 'AUS', 'AU', 'Australia', 'Australia', 'AU-32.png', 'AU-128.png', -26.29594646, 133.55540944, 4),
   (167, 7, 'CXR', 'CX', 'Christmas Island', 'Territory of Christmas Island', 'CX-32.png', 'CX-128.png', -10.49170619, 105.68083796, 11),
@@ -36,36 +38,35 @@ INSERT INTO `countries` (`id`,`region_id`, `code3l`, `code2l`, `name`, `name_off
   (192, 7, 'HMD', 'HM', 'Heard Island And McDonald Islands', 'Heard and McDonald Islands', 'HM-32.png', 'HM-128.png', -53.08168847, 73.50415800, 11),
   (193, 7, 'IOT', 'IO', 'British Indian Ocean Territory', 'The British Indian Ocean Territory', 'IO-32.png', 'IO-128.png', -7.33461519, 72.42425280, 12),
   (194, 7, 'ATF', 'TF', 'French Southern and Antarctic Lands', 'Territory of the French Southern and Antarctic Lands', 'TF-32.png', 'TF-128.png', -49.27235903, 69.34856300, 8),
-  (195, 7, 'UMI', 'UM', 'United States Minor Outlying Islands', 'United States Minor Outlying Islands', 'UM-32.png', 'UM-128.png', 19.46305694, 177.98631092, 5);
-  /*!40000 ALTER TABLE `countries`
+  (195, 7, 'UMI', 'UM', 'United States Minor Outlying Islands', 'United States Minor Outlying Islands', 'UM-32.png',
+        'UM-128.png', 19.46305694, 177.98631092, 5);
+/*!40000 ALTER TABLE `countries`
   ENABLE KEYS */;
 UNLOCK TABLES;
 
---
--- AMERICAN SAMOA
---
 INSERT INTO `states` (`id`, `name`, `country_id`) VALUES
+  --
+  -- AMERICAN SAMOA
+  --
   (164, 'Eastern', 164),
   (165, 'Manu''a', 164),
   (166, 'Swains Island', 164),
-  (167, 'Western', 164);
+  (167, 'Western', 164),
 
---
--- ANTARCTICA
---
-INSERT INTO `states` (`id`, `name`, `country_id`) VALUES
+  --
+  -- ANTARCTICA
+  --
   (194, 'Sector claimed by Argentina/Ch', 165),
   (195, 'Sector claimed by Argentina/UK', 165),
   (196, 'Sector claimed by Australia', 165),
   (197, 'Sector claimed by France', 165),
   (198, 'Sector claimed by New Zealand', 165),
   (199, 'Sector claimed by Norway', 165),
-  (200, 'Unclaimed Sector', 165);
+  (200, 'Unclaimed Sector', 165),
 
---
--- AUSTRALIA
---
-INSERT INTO `states` (`id`, `name`, `country_id`) VALUES
+  --
+  -- AUSTRALIA
+  --
   (245, 'Auckland', 166),
   (246, 'Australian Capital Territory', 166),
   (247, 'Balgowlah', 166),
@@ -97,30 +98,26 @@ INSERT INTO `states` (`id`, `name`, `country_id`) VALUES
   (273, 'Victoria', 166),
   (274, 'Werribee south', 166),
   (275, 'Western Australia', 166),
-  (276, 'Wheeler', 166);
+  (276, 'Wheeler', 166),
 
---
--- BRITISH INDIAN TERRITORY
---
-INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
-  (540, 'British Indian Ocean Territory', 31);
+  --
+  -- BRITISH INDIAN TERRITORY
+  --
+  (540, 'British Indian Ocean Territory', 31),
 
---
--- CHRISTMAS ISLAND
---
-INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
-  (773, 'Christmas Island', 45);
+  --
+  -- CHRISTMAS ISLAND
+  --
+  (773, 'Christmas Island', 45),
 
---
--- COCOS ISLANDS
---
-INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
-  (774, 'Cocos (Keeling) Islands', 46);
+  --
+  -- COCOS ISLANDS
+  --
+  (774, 'Cocos (Keeling) Islands', 46),
 
---
--- COOK ISLANDS
---
-INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  --
+  -- COOK ISLANDS
+  --
   (832, 'Aitutaki', 51),
   (833, 'Atiu', 51),
   (834, 'Mangaia', 51),
@@ -131,40 +128,36 @@ INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
   (839, 'Pukapuka', 51),
   (840, 'Rakahanga', 51),
   (841, 'Rarotonga', 51),
-  (842, 'Tongareva', 51);
+  (842, 'Tongareva', 51),
 
---
--- FIJI
---
-INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  --
+  -- FIJI
+  --
   (1146, 'Central', 73),
   (1147, 'Eastern', 73),
   (1148, 'Northern', 73),
   (1149, 'South Pacific', 73),
-  (1150, 'Western', 73);
+  (1150, 'Western', 73),
 
---
--- FRENCH POLYNESIA
---
-INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  --
+  -- FRENCH POLYNESIA
+  --
   (1317, 'Iles du Vent', 77),
   (1318, 'Iles sous le Vent', 77),
   (1319, 'Marquesas', 77),
   (1320, 'Tuamotu', 77),
-  (1321, 'Tubuai', 77);
+  (1321, 'Tubuai', 77),
 
---
--- FRENCH SOUTHERN AND ANTARCTIC TERRITORIES
---
-INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  --
+  -- FRENCH SOUTHERN AND ANTARCTIC TERRITORIES
+  --
   (1322, 'Amsterdam', 78),
   (1323, 'Crozet Islands', 78),
-  (1324, 'Kerguelen', 78);
+  (1324, 'Kerguelen', 78),
 
---
--- GUAM
---
-INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  --
+  -- GUAM
+  --
   (1507, 'Agana Heights', 89),
   (1508, 'Agat', 89),
   (1509, 'Barrigada', 89),
@@ -180,10 +173,74 @@ INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
   (1519, 'Talofofo', 89),
   (1520, 'Tamuning', 89),
   (1521, 'Yigo', 89),
-  (1522, 'Yona', 89);
+  (1522, 'Yona', 89),
 
---
--- HEARD AND MCDONALD ISLANDS
---
-INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
-  (1616, 'Heard and McDonald Islands', 96);
+  --
+  -- HEARD AND MCDONALD ISLANDS
+  --
+  (1616, 'Heard and McDonald Islands', 96),
+
+
+  --
+  -- KIRIBATI
+  --
+  (2012, 'Abaiang', 114),
+  (2013, 'Abemana', 114),
+  (2014, 'Aranuka', 114),
+  (2015, 'Arorae', 114),
+  (2016, 'Banaba', 114),
+  (2017, 'Beru', 114),
+  (2018, 'Butaritari', 114),
+  (2019, 'Kiritimati', 114),
+  (2020, 'Kuria', 114),
+  (2021, 'Maiana', 114),
+  (2022, 'Makin', 114),
+  (2023, 'Marakei', 114),
+  (2024, 'Nikunau', 114),
+  (2025, 'Nonouti', 114),
+  (2026, 'Onotoa', 114),
+  (2027, 'Phoenix Islands', 114),
+  (2028, 'Tabiteuea North', 114),
+  (2029, 'Tabiteuea South', 114),
+  (2030, 'Tabuaeran', 114),
+  (2031, 'Tamana', 114),
+  (2032, 'Tarawa North', 114),
+  (2033, 'Tarawa South', 114),
+  (2034, 'Teraina', 114),
+
+  --
+  -- MARSHALL ISLANDS
+  --
+  (2370, 'Ailinlaplap', 137),
+  (2371, 'Ailuk', 137),
+  (2372, 'Arno', 137),
+  (2373, 'Aur', 137),
+  (2374, 'Bikini', 137),
+  (2375, 'Ebon', 137),
+  (2376, 'Enewetak', 137),
+  (2377, 'Jabat', 137),
+  (2378, 'Jaluit', 137),
+  (2379, 'Kili', 137),
+  (2380, 'Kwajalein', 137),
+  (2381, 'Lae', 137),
+  (2382, 'Lib', 137),
+  (2383, 'Likiep', 137),
+  (2384, 'Majuro', 137),
+  (2385, 'Maloelap', 137),
+  (2386, 'Mejit', 137),
+  (2387, 'Mili', 137),
+  (2388, 'Namorik', 137),
+  (2389, 'Namu', 137),
+  (2390, 'Rongelap', 137),
+  (2391, 'Ujae', 137),
+  (2392, 'Utrik', 137),
+  (2393, 'Wotho', 137),
+  (2394, 'Wotje', 137),
+
+  --
+  -- MICRONESIA
+  --
+  (2460, 'Chuuk', 143),
+  (2461, 'Kusaie', 143),
+  (2462, 'Pohnpei', 143),
+  (2463, 'Yap', 143),

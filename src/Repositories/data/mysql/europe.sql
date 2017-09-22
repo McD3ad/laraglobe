@@ -4,7 +4,8 @@
 LOCK TABLES `countries` WRITE;
 /*!40000 ALTER TABLE `countries`
   DISABLE KEYS */;
-INSERT INTO `countries` (`id`,`region_id`, `code3l`, `code2l`, `name`, `name_official`, `flag_small`, `flag_large`, `latitude`, `longitude`, `zoom`) VALUES
+INSERT INTO `countries` (`id`, `region_id`, `code3l`, `code2l`, `name`, `name_official`, `flag_small`, `flag_large`, `latitude`, `longitude`, `zoom`)
+VALUES
   (196, 4, 'ALB', 'AL', 'Albania', 'the Republic of Albania', 'AL-32.png', 'AL-128.png', 41.00017358, 19.87170014, 7),
   (197, 4, 'AND', 'AD', 'Andorra', 'the Principality of Andorra', 'AD-32.png', 'AD-128.png', 42.54057088, 1.55201340, 11),
   (198, 4, 'AUT', 'AT', 'Austria', 'the Republic of Austria', 'AT-32.png', 'AT-128.png', 47.63125476, 13.18776731, 7),
@@ -57,69 +58,68 @@ INSERT INTO `countries` (`id`,`region_id`, `code3l`, `code2l`, `name`, `name_off
   (245, 4, 'GGY', 'GG', 'Guernsey', 'Bailiwick of Guernsey', 'GG-32.png', 'GG-128.png', 49.46565975, -2.58527200, 12),
   (246, 4, 'GIB', 'GI', 'Gibraltar', 'Gibraltar', 'GI-32.png', 'GI-128.png', 36.14864641, -5.34404779, 12),
   (247, 4, 'JEY', 'JE', 'Jersey', 'Bailiwick of Jersey', 'JE-32.png', 'JE-128.png', 49.21440771, -2.13124600, 12),
-  (248, 4, 'SJM', 'SJ', 'Svalbard and Jan Mayen', 'Svalbard and Jan Mayen', 'SJ-32.png', 'SJ-128.png', 77.92215764, 18.99010622, 4),
+  (248, 4, 'SJM', 'SJ', 'Svalbard and Jan Mayen', 'Svalbard and Jan Mayen', 'SJ-32.png', 'SJ-128.png', 77.92215764,
+        18.99010622, 4),
   (249, 4, 'VAT', 'VA', 'Vatican', 'Vatican City', 'VA-32.png', 'VA-128.png', 41.90377810, 12.45340142, 16);
-  /*!40000 ALTER TABLE `countries`
+/*!40000 ALTER TABLE `countries`
   ENABLE KEYS */;
 UNLOCK TABLES;
 
---
--- ALBANIA
---
 INSERT INTO `states` (`id`, `name`, `country_id`) VALUES
-(74, 'Berat', 196),
-(75, 'Bulqize', 196),
-(76, 'Delvine', 196),
-(77, 'Devoll', 196),
-(78, 'Dibre', 196),
-(79, 'Durres', 196),
-(80, 'Elbasan', 196),
-(81, 'Fier', 196),
-(82, 'Gjirokaster', 196),
-(83, 'Gramsh', 196),
-(84, 'Has', 196),
-(85, 'Kavaje', 196),
-(86, 'Kolonje', 196),
-(87, 'Korce', 196),
-(88, 'Kruje', 196),
-(89, 'Kucove', 196),
-(90, 'Kukes', 196),
-(91, 'Kurbin', 196),
-(92, 'Lezhe', 196),
-(93, 'Librazhd', 196),
-(94, 'Lushnje', 196),
-(95, 'Mallakaster', 196),
-(96, 'Malsi e Madhe', 196),
-(97, 'Mat', 196),
-(98, 'Mirdite', 196),
-(99, 'Peqin', 196),
-(100, 'Permet', 196),
-(101, 'Pogradec', 196),
-(102, 'Puke', 196),
-(103, 'Sarande', 196),
-(104, 'Shkoder', 196),
-(105, 'Skrapar', 196),
-(106, 'Tepelene', 196),
-(107, 'Tirane', 196),
-(108, 'Tropoje', 196),
-(109, 'Vlore', 196);
+  --
+  -- ALBANIA
+  --
+  (74, 'Berat', 196),
+  (75, 'Bulqize', 196),
+  (76, 'Delvine', 196),
+  (77, 'Devoll', 196),
+  (78, 'Dibre', 196),
+  (79, 'Durres', 196),
+  (80, 'Elbasan', 196),
+  (81, 'Fier', 196),
+  (82, 'Gjirokaster', 196),
+  (83, 'Gramsh', 196),
+  (84, 'Has', 196),
+  (85, 'Kavaje', 196),
+  (86, 'Kolonje', 196),
+  (87, 'Korce', 196),
+  (88, 'Kruje', 196),
+  (89, 'Kucove', 196),
+  (90, 'Kukes', 196),
+  (91, 'Kurbin', 196),
+  (92, 'Lezhe', 196),
+  (93, 'Librazhd', 196),
+  (94, 'Lushnje', 196),
+  (95, 'Mallakaster', 196),
+  (96, 'Malsi e Madhe', 196),
+  (97, 'Mat', 196),
+  (98, 'Mirdite', 196),
+  (99, 'Peqin', 196),
+  (100, 'Permet', 196),
+  (101, 'Pogradec', 196),
+  (102, 'Puke', 196),
+  (103, 'Sarande', 196),
+  (104, 'Shkoder', 196),
+  (105, 'Skrapar', 196),
+  (106, 'Tepelene', 196),
+  (107, 'Tirane', 196),
+  (108, 'Tropoje', 196),
+  (109, 'Vlore', 196),
 
---
--- ANDORRA
---
-INSERT INTO `states` (`id`, `name`, `country_id`) VALUES
-(168, 'Andorra la Vella', 197),
-(169, 'Canillo', 197),
-(170, 'Encamp', 197),
-(171, 'La Massana', 197),
-(172, 'Les Escaldes', 197),
-(173, 'Ordino', 197),
-(174, 'Sant Julia de Loria', 197);
+  --
+  -- ANDORRA
+  --
+  (168, 'Andorra la Vella', 197),
+  (169, 'Canillo', 197),
+  (170, 'Encamp', 197),
+  (171, 'La Massana', 197),
+  (172, 'Les Escaldes', 197),
+  (173, 'Ordino', 197),
+  (174, 'Sant Julia de Loria', 197),
 
---
--- AUSTRIA
---
-INSERT INTO `states` (`id`, `name`, `country_id`) VALUES
+  --
+  -- AUSTRIA
+  --
   (277, 'Bundesland Salzburg', 198),
   (278, 'Bundesland Steiermark', 198),
   (279, 'Bundesland Tirol', 198),
@@ -137,12 +137,11 @@ INSERT INTO `states` (`id`, `name`, `country_id`) VALUES
   (291, 'Tirol', 198),
   (292, 'Upper Austria', 198),
   (293, 'Vorarlberg', 198),
-  (294, 'Wien', 198);
+  (294, 'Wien', 198),
 
---
--- BELARUS
---
-INSERT INTO `states` (`id`, `name`, `country_id`) VALUES
+  --
+  -- BELARUS
+  --
   (413, 'Brest', 199),
   (414, 'Homjel''', 199),
   (415, 'Hrodna', 199),
@@ -151,12 +150,11 @@ INSERT INTO `states` (`id`, `name`, `country_id`) VALUES
   (418, 'Minsk', 199),
   (419, 'Minskaja Voblasts''', 199),
   (420, 'Petrik', 199),
-  (421, 'Vicebsk', 199);
+  (421, 'Vicebsk', 199),
 
---
--- BELGIUM
---
-INSERT INTO `states` (`id`, `name`, `country_id`) VALUES
+  --
+  -- BELGIUM
+  --
   (422, 'Antwerpen', 21),
   (423, 'Berchem', 21),
   (424, 'Brabant', 21),
@@ -173,25 +171,22 @@ INSERT INTO `states` (`id`, `name`, `country_id`) VALUES
   (435, 'Provincie Brabant', 21),
   (436, 'Vlaams-Brabant', 21),
   (437, 'Wallonne', 21),
-  (438, 'West-Vlaanderen', 21);
+  (438, 'West-Vlaanderen', 21),
 
---
--- BOSNIA AND HERZEGOVINA
---
-INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  --
+  -- BOSNIA AND HERZEGOVINA
+  --
   (486, 'Federacija Bosna i Hercegovina', 27),
-  (487, 'Republika Srpska', 27);
+  (487, 'Republika Srpska', 27),
 
---
--- BOUVET ISLAND
---
-INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
-  (511, 'Bouvet Island', 29);
+  --
+  -- BOUVET ISLAND
+  --
+  (511, 'Bouvet Island', 29),
 
---
--- BULGARIA
---
-INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  --
+  -- BULGARIA
+  --
   (545, 'Blagoevgrad', 33),
   (546, 'Burgas', 33),
   (547, 'Dobrich', 33),
@@ -221,12 +216,11 @@ INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
   (571, 'Veliko Tarnovo', 33),
   (572, 'Vidin', 33),
   (573, 'Vraca', 33),
-  (574, 'Yablaniza', 33);
+  (574, 'Yablaniza', 33),
 
---
--- CROATIA
---
-INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  --
+  -- CROATIA
+  --
   (870, 'Bjelovar-Bilogora', 54),
   (871, 'Dubrovnik-Neretva', 54),
   (872, 'Grad Zagreb', 54),
@@ -249,22 +243,20 @@ INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
   (889, 'Virovitica-Podravina', 54),
   (890, 'Vukovar-Srijem', 54),
   (891, 'Zadar', 54),
-  (892, 'Zagreb', 54);
+  (892, 'Zagreb', 54),
 
---
--- CYPRUS
---
-INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  --
+  -- CYPRUS
+  --
   (909, 'Government controlled area', 56),
   (910, 'Limassol', 56),
   (911, 'Nicosia District', 56),
   (912, 'Paphos', 56),
-  (913, 'Turkish controlled area', 56);
+  (913, 'Turkish controlled area', 56),
 
---
--- CZECH REPUBLIC
---
-INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  --
+  -- CZECH REPUBLIC
+  --
   (914, 'Central Bohemian', 57),
   (915, 'Frycovice', 57),
   (916, 'Jihocesky Kraj', 57),
@@ -291,12 +283,11 @@ INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
   (937, 'Valletta', 57),
   (938, 'Velesin', 57),
   (939, 'Vysochina', 57),
-  (940, 'Zlinsky', 57);
+  (940, 'Zlinsky', 57),
 
---
--- DENMARK
---
-INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  --
+  -- DENMARK
+  --
   (941, 'Arhus', 58),
   (942, 'Bornholm', 58),
   (943, 'Frederiksborg', 58),
@@ -319,12 +310,11 @@ INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
   (960, 'Toelloese', 58),
   (961, 'Vejle', 58),
   (962, 'Vestsjalland', 58),
-  (963, 'Viborg', 58);
+  (963, 'Viborg', 58),
 
---
--- ESTONIA
---
-INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  --
+  -- ESTONIA
+  --
   (1104, 'Harju', 68),
   (1105, 'Hiiu', 68),
   (1106, 'Ida-Viru', 68),
@@ -339,12 +329,11 @@ INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
   (1115, 'Tartu', 68),
   (1116, 'Valga', 68),
   (1117, 'Viljandi', 68),
-  (1118, 'Voru', 68);
+  (1118, 'Voru', 68),
 
---
--- FAROE ISLANDS
---
-INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  --
+  -- FAROE ISLANDS
+  --
   (1137, 'Klaksvik', 72),
   (1138, 'Nor ara Eysturoy', 72),
   (1139, 'Nor oy', 72),
@@ -353,12 +342,11 @@ INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
   (1142, 'Su uroy', 72),
   (1143, 'Sy ra Eysturoy', 72),
   (1144, 'Torshavn', 72),
-  (1145, 'Vaga', 72);
+  (1145, 'Vaga', 72),
 
---
--- FINLAND
---
-INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  --
+  -- FINLAND
+  --
   (1151, 'Ahvenanmaa', 74),
   (1152, 'Etela-Karjala', 74),
   (1153, 'Etela-Pohjanmaa', 74),
@@ -388,12 +376,11 @@ INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
   (1177, 'Tavastia Proper', 74),
   (1178, 'Uleaborgs Lan', 74),
   (1179, 'Uusimaa', 74),
-  (1180, 'Varsinais-Suomi', 74);
+  (1180, 'Varsinais-Suomi', 74),
 
---
--- FRANCE
---
-INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  --
+  -- FRANCE
+  --
   (1181, 'Ain', 75),
   (1182, 'Aisne', 75),
   (1183, 'Albi Le Sequestre', 75),
@@ -527,12 +514,11 @@ INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
   (1311, 'Vienne', 75),
   (1312, 'Vosges', 75),
   (1313, 'Yonne', 75),
-  (1314, 'Yvelines', 75);
+  (1314, 'Yvelines', 75),
 
---
--- GERMANY
---
-INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  --
+  -- GERMANY
+  --
   (1354, 'Auvergne', 82),
   (1355, 'Baden-Wurttemberg', 82),
   (1356, 'Bavaria', 82),
@@ -579,18 +565,16 @@ INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
   (1397, 'Thuringia', 82),
   (1398, 'Webling', 82),
   (1399, 'Weinstrabe', 82),
-  (1400, 'schlobborn', 82);
+  (1400, 'schlobborn', 82),
 
---
--- GIBRALTAR
---
-INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
-  (1411, 'Gibraltar', 84);
+  --
+  -- GIBRALTAR
+  --
+  (1411, 'Gibraltar', 84),
 
---
--- GREECE
---
-INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  --
+  -- GREECE
+  --
   (1412, 'Acharnes', 85),
   (1413, 'Ahaia', 85),
   (1414, 'Aitolia kai Akarnania', 85),
@@ -652,12 +636,11 @@ INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
   (1470, 'Voiotia', 85),
   (1471, 'West Greece', 85),
   (1472, 'Xanthi', 85),
-  (1473, 'Zakinthos', 85);
+  (1473, 'Zakinthos', 85),
 
---
--- GUERNSEY
---
-INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  --
+  -- GUERNSEY
+  --
   (1545, 'Alderney', 91),
   (1546, 'Castel', 91),
   (1547, 'Forest', 91),
@@ -669,12 +652,11 @@ INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
   (1553, 'Saint Saviour', 91),
   (1554, 'Sark', 91),
   (1555, 'Torteval', 91),
-  (1556, 'Vale', 91);
+  (1556, 'Vale', 91),
 
---
--- HUNGARY
---
-INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  --
+  -- HUNGARY
+  --
   (1637, 'Bacs-Kiskun', 99),
   (1638, 'Baranya', 99),
   (1639, 'Bekes', 99),
@@ -694,12 +676,11 @@ INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
   (1653, 'Tolna', 99),
   (1654, 'Vas', 99),
   (1655, 'Veszprem', 99),
-  (1656, 'Zala', 99);
+  (1656, 'Zala', 99),
 
---
--- ICELAND
---
-INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  --
+  -- ICELAND
+  --
   (1657, 'Austurland', 100),
   (1658, 'Gullbringusysla', 100),
   (1659, 'Hofu borgarsva i', 100),
@@ -708,4 +689,326 @@ INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
   (1662, 'Su urland', 100),
   (1663, 'Su urnes', 100),
   (1664, 'Vestfir ir', 100),
-  (1665, 'Vesturland', 100);
+  (1665, 'Vesturland', 100),
+
+  --
+  -- IRELAND
+  --
+  (1749, 'Armagh', 214),
+  (1750, 'Carlow', 214),
+  (1751, 'Cavan', 214),
+  (1752, 'Clare', 214),
+  (1753, 'Cork', 214),
+  (1754, 'Donegal', 214),
+  (1755, 'Dublin', 214),
+  (1756, 'Galway', 214),
+  (1757, 'Kerry', 214),
+  (1758, 'Kildare', 214),
+  (1759, 'Kilkenny', 214),
+  (1760, 'Laois', 214),
+  (1761, 'Leinster', 214),
+  (1762, 'Leitrim', 214),
+  (1763, 'Limerick', 214),
+  (1764, 'Loch Garman', 214),
+  (1765, 'Longford', 214),
+  (1766, 'Louth', 214),
+  (1767, 'Mayo', 214),
+  (1768, 'Meath', 214),
+  (1769, 'Monaghan', 214),
+  (1770, 'Offaly', 214),
+  (1771, 'Roscommon', 214),
+  (1772, 'Sligo', 214),
+  (1773, 'Tipperary North Riding', 214),
+  (1774, 'Tipperary South Riding', 214),
+  (1775, 'Ulster', 214),
+  (1776, 'Waterford', 214),
+  (1777, 'Westmeath', 214),
+  (1778, 'Wexford', 214),
+  (1779, 'Wicklow', 214),
+
+  --
+  -- ITALY
+  --
+  (1802, 'Abruzzi', 215),
+  (1803, 'Abruzzo', 215),
+  (1804, 'Agrigento', 215),
+  (1805, 'Alessandria', 215),
+  (1806, 'Ancona', 215),
+  (1807, 'Arezzo', 215),
+  (1808, 'Ascoli Piceno', 215),
+  (1809, 'Asti', 215),
+  (1810, 'Avellino', 215),
+  (1811, 'Bari', 215),
+  (1812, 'Basilicata', 215),
+  (1813, 'Belluno', 215),
+  (1814, 'Benevento', 215),
+  (1815, 'Bergamo', 215),
+  (1816, 'Biella', 215),
+  (1817, 'Bologna', 215),
+  (1818, 'Bolzano', 215),
+  (1819, 'Brescia', 215),
+  (1820, 'Brindisi', 215),
+  (1821, 'Calabria', 215),
+  (1822, 'Campania', 215),
+  (1823, 'Cartoceto', 215),
+  (1824, 'Caserta', 215),
+  (1825, 'Catania', 215),
+  (1826, 'Chieti', 215),
+  (1827, 'Como', 215),
+  (1828, 'Cosenza', 215),
+  (1829, 'Cremona', 215),
+  (1830, 'Cuneo', 215),
+  (1831, 'Emilia-Romagna', 215),
+  (1832, 'Ferrara', 215),
+  (1833, 'Firenze', 215),
+  (1834, 'Florence', 215),
+  (1835, 'Forli-Cesena ', 215),
+  (1836, 'Friuli-Venezia Giulia', 215),
+  (1837, 'Frosinone', 215),
+  (1838, 'Genoa', 215),
+  (1839, 'Gorizia', 215),
+  (1840, 'L''Aquila', 215),
+  (1841, 'Lazio', 215),
+  (1842, 'Lecce', 215),
+  (1843, 'Lecco', 215),
+  (1844, 'Lecco Province', 215),
+  (1845, 'Liguria', 215),
+  (1846, 'Lodi', 215),
+  (1847, 'Lombardia', 215),
+  (1848, 'Lombardy', 215),
+  (1849, 'Macerata', 215),
+  (1850, 'Mantova', 215),
+  (1851, 'Marche', 215),
+  (1852, 'Messina', 215),
+  (1853, 'Milan', 215),
+  (1854, 'Modena', 215),
+  (1855, 'Molise', 215),
+  (1856, 'Molteno', 215),
+  (1857, 'Montenegro', 215),
+  (1858, 'Monza and Brianza', 215),
+  (1859, 'Naples', 215),
+  (1860, 'Novara', 215),
+  (1861, 'Padova', 215),
+  (1862, 'Parma', 215),
+  (1863, 'Pavia', 215),
+  (1864, 'Perugia', 215),
+  (1865, 'Pesaro-Urbino', 215),
+  (1866, 'Piacenza', 215),
+  (1867, 'Piedmont', 215),
+  (1868, 'Piemonte', 215),
+  (1869, 'Pisa', 215),
+  (1870, 'Pordenone', 215),
+  (1871, 'Potenza', 215),
+  (1872, 'Puglia', 215),
+  (1873, 'Reggio Emilia', 215),
+  (1874, 'Rimini', 215),
+  (1875, 'Roma', 215),
+  (1876, 'Salerno', 215),
+  (1877, 'Sardegna', 215),
+  (1878, 'Sassari', 215),
+  (1879, 'Savona', 215),
+  (1880, 'Sicilia', 215),
+  (1881, 'Siena', 215),
+  (1882, 'Sondrio', 215),
+  (1883, 'South Tyrol', 215),
+  (1884, 'Taranto', 215),
+  (1885, 'Teramo', 215),
+  (1886, 'Torino', 215),
+  (1887, 'Toscana', 215),
+  (1888, 'Trapani', 215),
+  (1889, 'Trentino-Alto Adige', 215),
+  (1890, 'Trento', 215),
+  (1891, 'Treviso', 215),
+  (1892, 'Udine', 215),
+  (1893, 'Umbria', 215),
+  (1894, 'Valle d''Aosta', 215),
+  (1895, 'Varese', 215),
+  (1896, 'Veneto', 215),
+  (1897, 'Venezia', 215),
+  (1898, 'Verbano-Cusio-Ossola', 215),
+  (1899, 'Vercelli', 215),
+  (1900, 'Verona', 215),
+  (1901, 'Vicenza', 215),
+  (1902, 'Viterbo', 215),
+
+  --
+  -- JERSEY
+  --
+  (1966, 'Grouville', 110),
+  (1967, 'Saint Brelade', 110),
+  (1968, 'Saint Clement', 110),
+  (1969, 'Saint Helier', 110),
+  (1970, 'Saint John', 110),
+  (1971, 'Saint Lawrence', 110),
+  (1972, 'Saint Martin', 110),
+  (1973, 'Saint Mary', 110),
+  (1974, 'Saint Peter', 110),
+  (1975, 'Saint Saviour', 110),
+  (1976, 'Trinity', 110),
+
+  --
+  -- LATVIA
+  --
+  (2117, 'Aizkraukles', 216),
+  (2118, 'Aluksnes', 216),
+  (2119, 'Balvu', 216),
+  (2120, 'Bauskas', 216),
+  (2121, 'Cesu', 216),
+  (2122, 'Daugavpils', 216),
+  (2123, 'Daugavpils City', 216),
+  (2124, 'Dobeles', 216),
+  (2125, 'Gulbenes', 216),
+  (2126, 'Jekabspils', 216),
+  (2127, 'Jelgava', 216),
+  (2128, 'Jelgavas', 216),
+  (2129, 'Jurmala City', 216),
+  (2130, 'Kraslavas', 216),
+  (2131, 'Kuldigas', 216),
+  (2132, 'Liepaja', 216),
+  (2133, 'Liepajas', 216),
+  (2134, 'Limbazhu', 216),
+  (2135, 'Ludzas', 216),
+  (2136, 'Madonas', 216),
+  (2137, 'Ogres', 216),
+  (2138, 'Preilu', 216),
+  (2139, 'Rezekne', 216),
+  (2140, 'Rezeknes', 216),
+  (2141, 'Riga', 216),
+  (2142, 'Rigas', 216),
+  (2143, 'Saldus', 216),
+  (2144, 'Talsu', 216),
+  (2145, 'Tukuma', 216),
+  (2146, 'Valkas', 216),
+  (2147, 'Valmieras', 216),
+  (2148, 'Ventspils', 216),
+  (2149, 'Ventspils City', 216),
+
+  --
+  -- LIECHTENSTEIN
+  --
+  (2207, 'Balzers', 125),
+  (2208, 'Eschen', 125),
+  (2209, 'Gamprin', 125),
+  (2210, 'Mauren', 125),
+  (2211, 'Planken', 125),
+  (2212, 'Ruggell', 125),
+  (2213, 'Schaan', 125),
+  (2214, 'Schellenberg', 125),
+  (2215, 'Triesen', 125),
+  (2216, 'Triesenberg', 125),
+  (2217, 'Vaduz', 125),
+
+  --
+  -- LITHUANIA
+  --
+  (2218, 'Alytaus', 126),
+  (2219, 'Anyksciai', 126),
+  (2220, 'Kauno', 126),
+  (2221, 'Klaipedos', 126),
+  (2222, 'Marijampoles', 126),
+  (2223, 'Panevezhio', 126),
+  (2224, 'Panevezys', 126),
+  (2225, 'Shiauliu', 126),
+  (2226, 'Taurages', 126),
+  (2227, 'Telshiu', 126),
+  (2228, 'Telsiai', 126),
+  (2229, 'Utenos', 126),
+  (2230, 'Vilniaus', 126),
+
+  --
+  -- LUXEMBOURG
+  --
+  (2231, 'Capellen', 127),
+  (2232, 'Clervaux', 127),
+  (2233, 'Diekirch', 127),
+  (2234, 'Echternach', 127),
+  (2235, 'Esch-sur-Alzette', 127),
+  (2236, 'Grevenmacher', 127),
+  (2237, 'Luxembourg', 127),
+  (2238, 'Mersch', 127),
+  (2239, 'Redange', 127),
+  (2240, 'Remich', 127),
+  (2241, 'Vianden', 127),
+  (2242, 'Wiltz', 127),
+
+  --
+  -- MACEDONIA
+  --
+  (2244, 'Berovo', 129),
+  (2245, 'Bitola', 129),
+  (2246, 'Brod', 129),
+  (2247, 'Debar', 129),
+  (2248, 'Delchevo', 129),
+  (2249, 'Demir Hisar', 129),
+  (2250, 'Gevgelija', 129),
+  (2251, 'Gostivar', 129),
+  (2252, 'Kavadarci', 129),
+  (2253, 'Kichevo', 129),
+  (2254, 'Kochani', 129),
+  (2255, 'Kratovo', 129),
+  (2256, 'Kriva Palanka', 129),
+  (2257, 'Krushevo', 129),
+  (2258, 'Kumanovo', 129),
+  (2259, 'Negotino', 129),
+  (2260, 'Ohrid', 129),
+  (2261, 'Prilep', 129),
+  (2262, 'Probishtip', 129),
+  (2263, 'Radovish', 129),
+  (2264, 'Resen', 129),
+  (2265, 'Shtip', 129),
+  (2266, 'Skopje', 129),
+  (2267, 'Struga', 129),
+  (2268, 'Strumica', 129),
+  (2269, 'Sveti Nikole', 129),
+  (2270, 'Tetovo', 129),
+  (2271, 'Valandovo', 129),
+  (2272, 'Veles', 129),
+  (2273, 'Vinica', 129),
+
+  --
+  -- MALTA
+  --
+  (2355, 'Gozo and Comino', 135),
+  (2356, 'Inner Harbour', 135),
+  (2357, 'Northern', 135),
+  (2358, 'Outer Harbour', 135),
+  (2359, 'South Eastern', 135),
+  (2360, 'Valletta', 135),
+  (2361, 'Western', 135),
+
+  --
+  -- ISLE OF MAN
+  --
+  (2362, 'Castletown', 136),
+  (2363, 'Douglas', 136),
+  (2364, 'Laxey', 136),
+  (2365, 'Onchan', 136),
+  (2366, 'Peel', 136),
+  (2367, 'Port Erin', 136),
+  (2368, 'Port Saint Mary', 136),
+  (2369, 'Ramsey', 136),
+
+  --
+  -- MOLDOVA
+  --
+  (2464, 'Balti', 144),
+  (2465, 'Cahul', 144),
+  (2466, 'Chisinau', 144),
+  (2467, 'Chisinau Oras', 144),
+  (2468, 'Edinet', 144),
+  (2469, 'Gagauzia', 144),
+  (2470, 'Lapusna', 144),
+  (2471, 'Orhei', 144),
+  (2472, 'Soroca', 144),
+  (2473, 'Taraclia', 144),
+  (2474, 'Tighina', 144),
+  (2475, 'Transnistria', 144),
+  (2476, 'Ungheni', 144),
+
+  --
+  -- MONACO
+  --
+  (2477, 'Fontvieille', 145),
+  (2478, 'La Condamine', 145),
+  (2479, 'Monaco-Ville', 145),
+  (2480, 'Monte Carlo', 145),

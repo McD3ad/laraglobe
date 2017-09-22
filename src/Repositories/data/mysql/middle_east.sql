@@ -4,7 +4,8 @@
 LOCK TABLES `countries` WRITE;
 /*!40000 ALTER TABLE `countries`
   DISABLE KEYS */;
-INSERT INTO `countries` (`id`,`region_id`, `code3l`, `code2l`, `name`, `name_official`, `flag_small`, `flag_large`, `latitude`, `longitude`, `zoom`) VALUES
+INSERT INTO `countries` (`id`, `region_id`, `code3l`, `code2l`, `name`, `name_official`, `flag_small`, `flag_large`, `latitude`, `longitude`, `zoom`)
+VALUES
   (150, 5, 'BHR', 'BH', 'Bahrain', 'the Kingdom of Bahrain', 'BH-32.png', 'BH-128.png', 25.90740996, 50.65932354, 9),
   (151, 5, 'IRN', 'IR', 'Iran', 'the Islamic Republic of Iran', 'IR-32.png', 'IR-128.png', 31.40240324, 51.28204814, 5),
   (152, 5, 'IRQ', 'IQ', 'Iraq', 'the Republic of Iraq', 'IQ-32.png', 'IQ-128.png', 32.90170182, 43.19590056, 6),
@@ -17,16 +18,17 @@ INSERT INTO `countries` (`id`,`region_id`, `code3l`, `code2l`, `name`, `name_off
   (159, 5, 'QAT', 'QA', 'Qatar', 'the State of Qatar', 'QA-32.png', 'QA-128.png', 25.24551555, 51.24431480, 8),
   (160, 5, 'SAU', 'SA', 'Saudi Arabia', 'the Kingdom of Saudi Arabia', 'SA-32.png', 'SA-128.png', 24.16687314, 42.88190638, 5),
   (161, 5, 'SYR', 'SY', 'Syria', 'the Arab Republic of Syria', 'SY-32.png', 'SY-128.png', 34.71097430, 38.66723516, 6),
-  (162, 5, 'ARE', 'AE', 'United Arab Emirates', 'the United Arab Emirates', 'AE-32.png', 'AE-128.png', 24.64324405, 53.62261227, 7),
+  (162, 5, 'ARE', 'AE', 'United Arab Emirates', 'the United Arab Emirates', 'AE-32.png', 'AE-128.png', 24.64324405,
+        53.62261227, 7),
   (163, 5, 'YEM', 'YE', 'Yemen', 'the Republic of Yemen', 'YE-32.png', 'YE-128.png', 15.60865453, 47.60453676, 6);
-  /*!40000 ALTER TABLE `countries`
+/*!40000 ALTER TABLE `countries`
   ENABLE KEYS */;
 UNLOCK TABLES;
 
---
--- BAHRAIN
---
 INSERT INTO `states` (`id`, `name`, `country_id`) VALUES
+  --
+  -- BAHRAIN
+  --
   (327, '''Isa', 150),
   (328, 'Badiyah', 150),
   (329, 'Hidd', 150),
@@ -36,12 +38,11 @@ INSERT INTO `states` (`id`, `name`, `country_id`) VALUES
   (333, 'Sitrah', 150),
   (334, 'al-Manamah', 150),
   (335, 'al-Muharraq', 150),
-  (336, 'ar-Rifa''a', 150);
+  (336, 'ar-Rifa''a', 150),
 
---
--- IRAN
---
-INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  --
+  -- IRAN
+  --
   (1700, 'Ardabil', 103),
   (1701, 'Azarbayjan-e Bakhtari', 103),
   (1702, 'Azarbayjan-e Khavari', 103),
@@ -70,12 +71,11 @@ INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
   (1725, 'Sistan-e Baluchestan', 103),
   (1726, 'Tehran', 103),
   (1727, 'Yazd', 103),
-  (1728, 'Zanjan', 103);
+  (1728, 'Zanjan', 103),
 
---
--- IRAQ
---
-INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
+  --
+  -- IRAQ
+  --
   (1729, 'Babil', 104),
   (1730, 'Baghdad', 104),
   (1731, 'Dahuk', 104),
@@ -95,40 +95,73 @@ INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
   (1745, 'al-Qadisiyah', 104),
   (1746, 'an-Najaf', 104),
   (1747, 'as-Sulaymaniyah', 104),
-  (1748, 'at-Ta''mim', 104);
+  (1748, 'at-Ta''mim', 104),
 
---
--- ISRAEL
---
-INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
-  (1749, 'Armagh', 105),
-  (1750, 'Carlow', 105),
-  (1751, 'Cavan', 105),
-  (1752, 'Clare', 105),
-  (1753, 'Cork', 105),
-  (1754, 'Donegal', 105),
-  (1755, 'Dublin', 105),
-  (1756, 'Galway', 105),
-  (1757, 'Kerry', 105),
-  (1758, 'Kildare', 105),
-  (1759, 'Kilkenny', 105),
-  (1760, 'Laois', 105),
-  (1761, 'Leinster', 105),
-  (1762, 'Leitrim', 105),
-  (1763, 'Limerick', 105),
-  (1764, 'Loch Garman', 105),
-  (1765, 'Longford', 105),
-  (1766, 'Louth', 105),
-  (1767, 'Mayo', 105),
-  (1768, 'Meath', 105),
-  (1769, 'Monaghan', 105),
-  (1770, 'Offaly', 105),
-  (1771, 'Roscommon', 105),
-  (1772, 'Sligo', 105),
-  (1773, 'Tipperary North Riding', 105),
-  (1774, 'Tipperary South Riding', 105),
-  (1775, 'Ulster', 105),
-  (1776, 'Waterford', 105),
-  (1777, 'Westmeath', 105),
-  (1778, 'Wexford', 105),
-  (1779, 'Wicklow', 105);
+  --
+  -- ISRAEL
+  --
+  (1780, 'Beit Hanania', 153),
+  (1781, 'Ben Gurion Airport', 153),
+  (1782, 'Bethlehem', 153),
+  (1783, 'Caesarea', 153),
+  (1784, 'Centre', 153),
+  (1785, 'Gaza', 153),
+  (1786, 'Hadaron', 153),
+  (1787, 'Haifa District', 153),
+  (1788, 'Hamerkaz', 153),
+  (1789, 'Hazafon', 153),
+  (1790, 'Hebron', 153),
+  (1791, 'Jaffa', 153),
+  (1792, 'Jerusalem', 153),
+  (1793, 'Khefa', 153),
+  (1794, 'Kiryat Yam', 153),
+  (1795, 'Lower Galilee', 153),
+  (1796, 'Qalqilya', 153),
+  (1797, 'Talme Elazar', 153),
+  (1798, 'Tel Aviv', 153),
+  (1799, 'Tsafon', 153),
+  (1800, 'Umm El Fahem', 153),
+  (1801, 'Yerushalayim', 153),
+
+  --
+  -- JORDAN
+  --
+  (1977, '''Ajlun', 154),
+  (1978, 'Amman', 154),
+  (1979, 'Irbid', 154),
+  (1980, 'Jarash', 154),
+  (1981, 'Ma''an', 154),
+  (1982, 'Madaba', 154),
+  (1983, 'al-''Aqabah', 154),
+  (1984, 'al-Balqa''', 154),
+  (1985, 'al-Karak', 154),
+  (1986, 'al-Mafraq', 154),
+  (1987, 'at-Tafilah', 154),
+  (1988, 'az-Zarqa''', 154),
+
+  --
+  -- KUWAIT
+  --
+  (2082, 'Al Asimah', 155),
+  (2083, 'Hawalli', 155),
+  (2084, 'Mishref', 155),
+  (2085, 'Qadesiya', 155),
+  (2086, 'Safat', 155),
+  (2087, 'Salmiya', 155),
+  (2088, 'al-Ahmadi', 155),
+  (2089, 'al-Farwaniyah', 155),
+  (2090, 'al-Jahra', 155),
+  (2091, 'al-Kuwayt', 155),
+
+  --
+  -- LEBANON
+  --
+  (2150, 'Beirut', 156),
+  (2151, 'Jabal Lubnan', 156),
+  (2152, 'Mohafazat Liban-Nord', 156),
+  (2153, 'Mohafazat Mont-Liban', 156),
+  (2154, 'Sidon', 156),
+  (2155, 'al-Biqa', 156),
+  (2156, 'al-Janub', 156),
+  (2157, 'an-Nabatiyah', 156),
+  (2158, 'ash-Shamal', 156),

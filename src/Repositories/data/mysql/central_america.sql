@@ -17,33 +17,31 @@ INSERT INTO `countries` (`id`,`region_id`, `code3l`, `code2l`, `name`, `name_off
   ENABLE KEYS */;
 UNLOCK TABLES;
 
+INSERT INTO `states` (`id`, `name`, `country_id`) VALUES
 --
 -- BELIZE
 --
-INSERT INTO `states` (`id`, `name`, `country_id`) VALUES
   (439, 'Belize', 22),
   (440, 'Cayo', 22),
   (441, 'Corozal', 22),
   (442, 'Orange Walk', 22),
   (443, 'Stann Creek', 22),
-  (444, 'Toledo', 22);
+  (444, 'Toledo', 22),
 
 --
 -- COSTA RICA
 --
-INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
   (843, 'Alajuela', 52),
   (844, 'Cartago', 52),
   (845, 'Guanacaste', 52),
   (846, 'Heredia', 52),
   (847, 'Limon', 52),
   (848, 'Puntarenas', 52),
-  (849, 'San Jose', 52);
+  (849, 'San Jose', 52),
 
 --
 -- EL SALVADOR
 --
-INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
   (1077, 'Ahuachapan', 65),
   (1078, 'Cabanas', 65),
   (1079, 'Chalatenango', 65),
@@ -57,12 +55,11 @@ INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
   (1087, 'San Vicente', 65),
   (1088, 'Santa Ana', 65),
   (1089, 'Sonsonate', 65),
-  (1090, 'Usulutan', 65);
+  (1090, 'Usulutan', 65),
 
 --
 -- GUATEMALA
 --
-INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
   (1523, 'Alta Verapaz', 90),
   (1524, 'Baja Verapaz', 90),
   (1525, 'Chimaltenango', 90),
@@ -84,12 +81,11 @@ INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
   (1541, 'Solola', 90),
   (1542, 'Suchitepequez', 90),
   (1543, 'Totonicapan', 90),
-  (1544, 'Zacapa', 90);
+  (1544, 'Zacapa', 90),
 
 --
 -- HONDURAS
 --
-INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
   (1617, 'Atlantida', 97),
   (1618, 'Choluteca', 97),
   (1619, 'Colon', 97),
@@ -108,4 +104,41 @@ INSERT INTO `states` (`id`, `name`, `country_id`) VALUE
   (1632, 'Olancho', 97),
   (1633, 'Santa Barbara', 97),
   (1634, 'Valle', 97),
-  (1635, 'Yoro', 97);
+  (1635, 'Yoro', 97),
+
+  --
+  -- MEXICO
+  --
+  (2427, 'Aguascalientes', 142),
+  (2428, 'Baja California', 142),
+  (2429, 'Baja California Sur', 142),
+  (2430, 'Campeche', 142),
+  (2431, 'Chiapas', 142),
+  (2432, 'Chihuahua', 142),
+  (2433, 'Coahuila', 142),
+  (2434, 'Colima', 142),
+  (2435, 'Distrito Federal', 142),
+  (2436, 'Durango', 142),
+  (2437, 'Estado de Mexico', 142),
+  (2438, 'Guanajuato', 142),
+  (2439, 'Guerrero', 142),
+  (2440, 'Hidalgo', 142),
+  (2441, 'Jalisco', 142),
+  (2442, 'Mexico', 142),
+  (2443, 'Michoacan', 142),
+  (2444, 'Morelos', 142),
+  (2445, 'Nayarit', 142),
+  (2446, 'Nuevo Leon', 142),
+  (2447, 'Oaxaca', 142),
+  (2448, 'Puebla', 142),
+  (2449, 'Queretaro', 142),
+  (2450, 'Quintana Roo', 142),
+  (2451, 'San Luis Potosi', 142),
+  (2452, 'Sinaloa', 142),
+  (2453, 'Sonora', 142),
+  (2454, 'Tabasco', 142),
+  (2455, 'Tamaulipas', 142),
+  (2456, 'Tlaxcala', 142),
+  (2457, 'Veracruz', 142),
+  (2458, 'Yucatan', 142),
+  (2459, 'Zacatecas', 142),
