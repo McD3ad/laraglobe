@@ -1,8 +1,6 @@
 {
     "name": "dmitriymarley/laraglobe",
     "description": "Provide countries list with country code, cities and states",
-    "version": "1.0.2",
-    "type": "package",
     "keywords": [
         "dmitriymarley",
         "countries",
@@ -20,11 +18,31 @@
             "role": "Developer"
         }
     ],
-    "minimum-stability": "dev",
-    "require": {},
+    "require": {
+        "php" : "^7.0",
+        "illuminate/console": "~5.5.0",
+        "illuminate/database": "~5.5.0",
+        "illuminate/support": "~5.5.0",
+        "illuminate/pipeline": "~5.5.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit" : "^6.2",
+        "mockery/mockery": "^0.9.4",
+        "orchestra/testbench": "~3.5.0",
+        "doctrine/dbal": "^2.5.2"
+    },
     "autoload": {
         "psr-4": {
             "DmitriyMarley\\LaraGlobe\\":"src"
         }
-    }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "DmitriyMarley\\LaraGlobe\\LaraGlobeServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }

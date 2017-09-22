@@ -1,40 +1,30 @@
-<?php
+<?php declare(strict_types=1);
 
 namespace DmitriyMarley\LaraGlobe;
 
-use DmitriyMarley\LaraGlobe\Console\Commands\GlobePopulate;
-use DmitriyMarley\LaraGlobe\Console\Commands\GlobeDrop;
 use Illuminate\Support\ServiceProvider;
-use Illuminate\Foundation\AliasLoader;
 
 class LaraGlobeServiceProvider extends ServiceProvider
 {
-    protected $commands = [
-        GlobePopulate::class,
-        GlobeDrop::class,
-    ];
-
     /**
-     * Bootstrap the application services.
-     *
-     * @return void
+     * Bootstrap the application events.
      */
     public function boot()
     {
-        //
+        /**
+         * @todo:
+         * 1. publish config
+         * 2. publish migrations
+         */
     }
-
     /**
-     * Register the application services.
-     *
-     * @return void
+     * Register the service provider.
      */
     public function register()
     {
-        $this->app->bind('lara-globe', function () {
-            return new LaraGlobe;
-        });
-
-        $this->commands($this->commands);
+        /**
+         * @todo:
+         * 1. register commands
+         */
     }
 }
