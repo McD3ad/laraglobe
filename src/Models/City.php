@@ -20,4 +20,17 @@ class City extends Model
     {
         return $this->belongsTo(State::class);
     }
+    
+    /**
+     * Make community active
+     * @return $this
+     */
+    public function activate()
+    {
+        $this->timestamps = false;
+        $this->active = 1;
+        $this->save();
+
+        return $this;
+    }
 }
